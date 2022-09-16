@@ -1,4 +1,4 @@
-module rush
+module productbot
 
 go 1.14
 
