@@ -10,12 +10,21 @@ export function dew() {
 
   (function (globalScope) {
     'use strict';
+<<<<<<< Updated upstream
     /*
      *  decimal.js v10.2.0
      *  An arbitrary-precision Decimal type for JavaScript.
      *  https://github.com/MikeMcl/decimal.js
      *  Copyright (c) 2019 Michael Mclaughlin <M8ch88l@gmail.com>
      *  MIT Licence
+=======
+    /*
+     *  decimal.js v10.2.0
+     *  An arbitrary-precision Decimal type for JavaScript.
+     *  https://github.com/MikeMcl/decimal.js
+     *  Copyright (c) 2019 Michael Mclaughlin <M8ch88l@gmail.com>
+     *  MIT Licence
+>>>>>>> Stashed changes
      */
     // -----------------------------------  EDITABLE DEFAULTS  ------------------------------------ //
     // The maximum exponent magnitude.
@@ -119,6 +128,7 @@ export function dew() {
       name: '[object Decimal]'
     }; // Decimal prototype methods
 
+<<<<<<< Updated upstream
     /*
      *  absoluteValue             abs
      *  ceil
@@ -184,6 +194,73 @@ export function dew() {
     /*
      * Return a new Decimal whose value is the absolute value of this Decimal.
      *
+=======
+    /*
+     *  absoluteValue             abs
+     *  ceil
+     *  comparedTo                cmp
+     *  cosine                    cos
+     *  cubeRoot                  cbrt
+     *  decimalPlaces             dp
+     *  dividedBy                 div
+     *  dividedToIntegerBy        divToInt
+     *  equals                    eq
+     *  floor
+     *  greaterThan               gt
+     *  greaterThanOrEqualTo      gte
+     *  hyperbolicCosine          cosh
+     *  hyperbolicSine            sinh
+     *  hyperbolicTangent         tanh
+     *  inverseCosine             acos
+     *  inverseHyperbolicCosine   acosh
+     *  inverseHyperbolicSine     asinh
+     *  inverseHyperbolicTangent  atanh
+     *  inverseSine               asin
+     *  inverseTangent            atan
+     *  isFinite
+     *  isInteger                 isInt
+     *  isNaN
+     *  isNegative                isNeg
+     *  isPositive                isPos
+     *  isZero
+     *  lessThan                  lt
+     *  lessThanOrEqualTo         lte
+     *  logarithm                 log
+     *  [maximum]                 [max]
+     *  [minimum]                 [min]
+     *  minus                     sub
+     *  modulo                    mod
+     *  naturalExponential        exp
+     *  naturalLogarithm          ln
+     *  negated                   neg
+     *  plus                      add
+     *  precision                 sd
+     *  round
+     *  sine                      sin
+     *  squareRoot                sqrt
+     *  tangent                   tan
+     *  times                     mul
+     *  toBinary
+     *  toDecimalPlaces           toDP
+     *  toExponential
+     *  toFixed
+     *  toFraction
+     *  toHexadecimal             toHex
+     *  toNearest
+     *  toNumber
+     *  toOctal
+     *  toPower                   pow
+     *  toPrecision
+     *  toSignificantDigits       toSD
+     *  toString
+     *  truncated                 trunc
+     *  valueOf                   toJSON
+     */
+
+    /*
+     * Return a new Decimal whose value is the absolute value of this Decimal.
+     *
+>>>>>>> Stashed changes
      */
 
     P.absoluteValue = P.abs = function () {
@@ -191,16 +268,24 @@ export function dew() {
       if (x.s < 0) x.s = 1;
       return finalise(x);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
      * direction of positive Infinity.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
+     * direction of positive Infinity.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.ceil = function () {
       return finalise(new (this || _global).constructor(this || _global), (this || _global).e + 1, 2);
     };
+<<<<<<< Updated upstream
     /*
      * Return
      *   1    if the value of this Decimal is greater than the value of `y`,
@@ -208,6 +293,15 @@ export function dew() {
      *   0    if they have the same value,
      *   NaN  if the value of either Decimal is NaN.
      *
+=======
+    /*
+     * Return
+     *   1    if the value of this Decimal is greater than the value of `y`,
+     *  -1    if the value of this Decimal is less than the value of `y`,
+     *   0    if they have the same value,
+     *   NaN  if the value of either Decimal is NaN.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -242,6 +336,7 @@ export function dew() {
 
       return xdL === ydL ? 0 : xdL > ydL ^ xs < 0 ? 1 : -1;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the cosine of the value in radians of this Decimal.
      *
@@ -254,6 +349,20 @@ export function dew() {
      * cos(-Infinity) = NaN
      * cos(NaN)       = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the cosine of the value in radians of this Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-1, 1]
+     *
+     * cos(0)         = 1
+     * cos(-0)        = 1
+     * cos(Infinity)  = NaN
+     * cos(-Infinity) = NaN
+     * cos(NaN)       = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -274,6 +383,7 @@ export function dew() {
       Ctor.rounding = rm;
       return finalise(quadrant == 2 || quadrant == 3 ? x.neg() : x, pr, rm, true);
     };
+<<<<<<< Updated upstream
     /*
      *
      * Return a new Decimal whose value is the cube root of the value of this Decimal, rounded to
@@ -289,6 +399,23 @@ export function dew() {
      *
      * Math.cbrt(x) = (x < 0 ? -Math.pow(-x, 1/3) : Math.pow(x, 1/3))
      *
+=======
+    /*
+     *
+     * Return a new Decimal whose value is the cube root of the value of this Decimal, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+     *  cbrt(0)  =  0
+     *  cbrt(-0) = -0
+     *  cbrt(1)  =  1
+     *  cbrt(-1) = -1
+     *  cbrt(N)  =  N
+     *  cbrt(-I) = -I
+     *  cbrt(I)  =  I
+     *
+     * Math.cbrt(x) = (x < 0 ? -Math.pow(-x, 1/3) : Math.pow(x, 1/3))
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -377,9 +504,15 @@ export function dew() {
       external = true;
       return finalise(r, e, Ctor.rounding, m);
     };
+<<<<<<< Updated upstream
     /*
      * Return the number of decimal places of the value of this Decimal.
      *
+=======
+    /*
+     * Return the number of decimal places of the value of this Decimal.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -399,6 +532,7 @@ export function dew() {
 
       return n;
     };
+<<<<<<< Updated upstream
     /*
      *  n / 0 = I
      *  n / N = N
@@ -419,16 +553,45 @@ export function dew() {
      * Return a new Decimal whose value is the value of this Decimal divided by `y`, rounded to
      * `precision` significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     *  n / 0 = I
+     *  n / N = N
+     *  n / I = 0
+     *  0 / n = 0
+     *  0 / 0 = N
+     *  0 / N = N
+     *  0 / I = 0
+     *  N / n = N
+     *  N / 0 = N
+     *  N / N = N
+     *  N / I = N
+     *  I / n = I
+     *  I / 0 = I
+     *  I / N = N
+     *  I / I = N
+     *
+     * Return a new Decimal whose value is the value of this Decimal divided by `y`, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.dividedBy = P.div = function (y) {
       return divide(this || _global, new (this || _global).constructor(y));
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the integer part of dividing the value of this Decimal
      * by the value of `y`, rounded to `precision` significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the integer part of dividing the value of this Decimal
+     * by the value of `y`, rounded to `precision` significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -437,39 +600,66 @@ export function dew() {
           Ctor = x.constructor;
       return finalise(divide(x, new Ctor(y), 0, 1, 1), Ctor.precision, Ctor.rounding);
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is equal to the value of `y`, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is equal to the value of `y`, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.equals = P.eq = function (y) {
       return this.cmp(y) === 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
      * direction of negative Infinity.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal rounded to a whole number in the
+     * direction of negative Infinity.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.floor = function () {
       return finalise(new (this || _global).constructor(this || _global), (this || _global).e + 1, 3);
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is greater than the value of `y`, otherwise return
      * false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is greater than the value of `y`, otherwise return
+     * false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.greaterThan = P.gt = function (y) {
       return this.cmp(y) > 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is greater than or equal to the value of `y`,
      * otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is greater than or equal to the value of `y`,
+     * otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -477,6 +667,7 @@ export function dew() {
       var k = this.cmp(y);
       return k == 1 || k === 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic cosine of the value in radians of this
      * Decimal.
@@ -501,6 +692,32 @@ export function dew() {
      *
      * TODO? Compare performance of cosh(x) = 0.5 * (exp(x) + exp(-x))
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic cosine of the value in radians of this
+     * Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [1, Infinity]
+     *
+     * cosh(x) = 1 + x^2/2! + x^4/4! + x^6/6! + ...
+     *
+     * cosh(0)         = 1
+     * cosh(-0)        = 1
+     * cosh(Infinity)  = Infinity
+     * cosh(-Infinity) = Infinity
+     * cosh(NaN)       = NaN
+     *
+     *  x        time taken (ms)   result
+     * 1000      9                 9.8503555700852349694e+433
+     * 10000     25                4.4034091128314607936e+4342
+     * 100000    171               1.4033316802130615897e+43429
+     * 1000000   3817              1.5166076984010437725e+434294
+     * 10000000  abandoned after 2 minute wait
+     *
+     * TODO? Compare performance of cosh(x) = 0.5 * (exp(x) + exp(-x))
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -545,6 +762,7 @@ export function dew() {
 
       return finalise(x, Ctor.precision = pr, Ctor.rounding = rm, true);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic sine of the value in radians of this
      * Decimal.
@@ -574,6 +792,37 @@ export function dew() {
      *
      * TODO? Compare performance of sinh(x) = 0.5 * (exp(x) - exp(-x))
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic sine of the value in radians of this
+     * Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-Infinity, Infinity]
+     *
+     * sinh(x) = x + x^3/3! + x^5/5! + x^7/7! + ...
+     *
+     * sinh(0)         = 0
+     * sinh(-0)        = -0
+     * sinh(Infinity)  = Infinity
+     * sinh(-Infinity) = -Infinity
+     * sinh(NaN)       = NaN
+     *
+     * x        time taken (ms)
+     * 10       2 ms
+     * 100      5 ms
+     * 1000     14 ms
+     * 10000    82 ms
+     * 100000   886 ms            1.4033316802130615897e+43429
+     * 200000   2613 ms
+     * 300000   5407 ms
+     * 400000   8824 ms
+     * 500000   13026 ms          8.7080643612718084129e+217146
+     * 1000000  48543 ms
+     *
+     * TODO? Compare performance of sinh(x) = 0.5 * (exp(x) - exp(-x))
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -621,6 +870,7 @@ export function dew() {
       Ctor.rounding = rm;
       return finalise(x, pr, rm, true);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic tangent of the value in radians of this
      * Decimal.
@@ -636,6 +886,23 @@ export function dew() {
      * tanh(-Infinity) = -1
      * tanh(NaN)       = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic tangent of the value in radians of this
+     * Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-1, 1]
+     *
+     * tanh(x) = sinh(x) / cosh(x)
+     *
+     * tanh(0)         = 0
+     * tanh(-0)        = -0
+     * tanh(Infinity)  = 1
+     * tanh(-Infinity) = -1
+     * tanh(NaN)       = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -652,6 +919,7 @@ export function dew() {
       Ctor.rounding = 1;
       return divide(x.sinh(), x.cosh(), Ctor.precision = pr, Ctor.rounding = rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arccosine (inverse cosine) in radians of the value of
      * this Decimal.
@@ -670,6 +938,26 @@ export function dew() {
      * acos(|x| > 1) = NaN
      * acos(NaN)     = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arccosine (inverse cosine) in radians of the value of
+     * this Decimal.
+     *
+     * Domain: [-1, 1]
+     * Range: [0, pi]
+     *
+     * acos(x) = pi/2 - asin(x)
+     *
+     * acos(0)       = pi/2
+     * acos(-0)      = pi/2
+     * acos(1)       = 0
+     * acos(-1)      = pi
+     * acos(1/2)     = pi/3
+     * acos(-1/2)    = 2*pi/3
+     * acos(|x| > 1) = NaN
+     * acos(NaN)     = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -697,6 +985,7 @@ export function dew() {
       Ctor.rounding = rm;
       return halfPi.minus(x);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic cosine in radians of the
      * value of this Decimal.
@@ -715,6 +1004,26 @@ export function dew() {
      * acosh(1)         = 0
      * acosh(-1)        = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic cosine in radians of the
+     * value of this Decimal.
+     *
+     * Domain: [1, Infinity]
+     * Range: [0, Infinity]
+     *
+     * acosh(x) = ln(x + sqrt(x^2 - 1))
+     *
+     * acosh(x < 1)     = NaN
+     * acosh(NaN)       = NaN
+     * acosh(Infinity)  = Infinity
+     * acosh(-Infinity) = NaN
+     * acosh(0)         = NaN
+     * acosh(-0)        = NaN
+     * acosh(1)         = 0
+     * acosh(-1)        = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -736,6 +1045,7 @@ export function dew() {
       Ctor.rounding = rm;
       return x.ln();
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic sine in radians of the value
      * of this Decimal.
@@ -751,6 +1061,23 @@ export function dew() {
      * asinh(0)         = 0
      * asinh(-0)        = -0
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic sine in radians of the value
+     * of this Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-Infinity, Infinity]
+     *
+     * asinh(x) = ln(x + sqrt(x^2 + 1))
+     *
+     * asinh(NaN)       = NaN
+     * asinh(Infinity)  = Infinity
+     * asinh(-Infinity) = -Infinity
+     * asinh(0)         = 0
+     * asinh(-0)        = -0
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -771,6 +1098,7 @@ export function dew() {
       Ctor.rounding = rm;
       return x.ln();
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic tangent in radians of the
      * value of this Decimal.
@@ -789,6 +1117,26 @@ export function dew() {
      * atanh(1)         = Infinity
      * atanh(-1)        = -Infinity
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic tangent in radians of the
+     * value of this Decimal.
+     *
+     * Domain: [-1, 1]
+     * Range: [-Infinity, Infinity]
+     *
+     * atanh(x) = 0.5 * ln((1 + x) / (1 - x))
+     *
+     * atanh(|x| > 1)   = NaN
+     * atanh(NaN)       = NaN
+     * atanh(Infinity)  = NaN
+     * atanh(-Infinity) = NaN
+     * atanh(0)         = 0
+     * atanh(-0)        = -0
+     * atanh(1)         = Infinity
+     * atanh(-1)        = -Infinity
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -814,6 +1162,7 @@ export function dew() {
       Ctor.rounding = rm;
       return x.times(0.5);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arcsine (inverse sine) in radians of the value of this
      * Decimal.
@@ -834,6 +1183,28 @@ export function dew() {
      *
      * TODO? Compare performance of Taylor series.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arcsine (inverse sine) in radians of the value of this
+     * Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-pi/2, pi/2]
+     *
+     * asin(x) = 2*atan(x/(1 + sqrt(1 - x^2)))
+     *
+     * asin(0)       = 0
+     * asin(-0)      = -0
+     * asin(1/2)     = pi/6
+     * asin(-1/2)    = -pi/6
+     * asin(1)       = pi/2
+     * asin(-1)      = -pi/2
+     * asin(|x| > 1) = NaN
+     * asin(NaN)     = NaN
+     *
+     * TODO? Compare performance of Taylor series.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -869,6 +1240,7 @@ export function dew() {
       Ctor.rounding = rm;
       return x.times(2);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arctangent (inverse tangent) in radians of the value
      * of this Decimal.
@@ -886,6 +1258,25 @@ export function dew() {
      * atan(-Infinity) = -pi/2
      * atan(NaN)       = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arctangent (inverse tangent) in radians of the value
+     * of this Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-pi/2, pi/2]
+     *
+     * atan(x) = x - x^3/3 + x^5/5 - x^7/7 + ...
+     *
+     * atan(0)         = 0
+     * atan(-0)        = -0
+     * atan(1)         = pi/4
+     * atan(-1)        = -pi/4
+     * atan(Infinity)  = pi/2
+     * atan(-Infinity) = -pi/2
+     * atan(NaN)       = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -949,78 +1340,127 @@ export function dew() {
       external = true;
       return finalise(r, Ctor.precision = pr, Ctor.rounding = rm, true);
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is a finite number, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is a finite number, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isFinite = function () {
       return !!(this || _global).d;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is an integer, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is an integer, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isInteger = P.isInt = function () {
       return !!(this || _global).d && mathfloor((this || _global).e / LOG_BASE) > (this || _global).d.length - 2;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is NaN, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is NaN, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isNaN = function () {
       return !(this || _global).s;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is negative, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is negative, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isNegative = P.isNeg = function () {
       return (this || _global).s < 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is positive, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is positive, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isPositive = P.isPos = function () {
       return (this || _global).s > 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is 0 or -0, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is 0 or -0, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.isZero = function () {
       return !!(this || _global).d && (this || _global).d[0] === 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is less than `y`, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is less than `y`, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.lessThan = P.lt = function (y) {
       return this.cmp(y) < 0;
     };
+<<<<<<< Updated upstream
     /*
      * Return true if the value of this Decimal is less than or equal to `y`, otherwise return false.
      *
+=======
+    /*
+     * Return true if the value of this Decimal is less than or equal to `y`, otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.lessThanOrEqualTo = P.lte = function (y) {
       return this.cmp(y) < 1;
     };
+<<<<<<< Updated upstream
     /*
      * Return the logarithm of the value of this Decimal to the specified base, rounded to `precision`
      * significant digits using rounding mode `rounding`.
@@ -1050,6 +1490,37 @@ export function dew() {
      *
      * [base] {number|string|Decimal} The base of the logarithm.
      *
+=======
+    /*
+     * Return the logarithm of the value of this Decimal to the specified base, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * If no base is specified, return log[10](arg).
+     *
+     * log[base](arg) = ln(arg) / ln(base)
+     *
+     * The result will always be correctly rounded if the base of the log is 10, and 'almost always'
+     * otherwise:
+     *
+     * Depending on the rounding mode, the result may be incorrectly rounded if the first fifteen
+     * rounding digits are [49]99999999999999 or [50]00000000000000. In that case, the maximum error
+     * between the result and the correctly rounded result will be one ulp (unit in the last place).
+     *
+     * log[-b](a)       = NaN
+     * log[0](a)        = NaN
+     * log[1](a)        = NaN
+     * log[NaN](a)      = NaN
+     * log[Infinity](a) = NaN
+     * log[b](0)        = -Infinity
+     * log[b](-0)       = -Infinity
+     * log[b](-a)       = NaN
+     * log[b](1)        = 0
+     * log[b](Infinity) = Infinity
+     * log[b](NaN)      = NaN
+     *
+     * [base] {number|string|Decimal} The base of the logarithm.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1138,6 +1609,7 @@ export function dew() {
       external = true;
       return finalise(r, pr, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the maximum of the arguments and the value of this Decimal.
      *
@@ -1180,6 +1652,50 @@ export function dew() {
      * Return a new Decimal whose value is the value of this Decimal minus `y`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the maximum of the arguments and the value of this Decimal.
+     *
+     * arguments {number|string|Decimal}
+     *
+    P.max = function () {
+      Array.prototype.push.call(arguments, this);
+      return maxOrMin(this.constructor, arguments, 'lt');
+    };
+     */
+
+    /*
+     * Return a new Decimal whose value is the minimum of the arguments and the value of this Decimal.
+     *
+     * arguments {number|string|Decimal}
+     *
+    P.min = function () {
+      Array.prototype.push.call(arguments, this);
+      return maxOrMin(this.constructor, arguments, 'gt');
+    };
+     */
+
+    /*
+     *  n - 0 = n
+     *  n - N = N
+     *  n - I = -I
+     *  0 - n = -n
+     *  0 - 0 = 0
+     *  0 - N = N
+     *  0 - I = -I
+     *  N - n = N
+     *  N - 0 = N
+     *  N - N = N
+     *  N - I = N
+     *  I - n = I
+     *  I - 0 = I
+     *  I - N = N
+     *  I - I = N
+     *
+     * Return a new Decimal whose value is the value of this Decimal minus `y`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1319,6 +1835,7 @@ export function dew() {
       y.e = getBase10Exponent(xd, e);
       return external ? finalise(y, pr, rm) : y;
     };
+<<<<<<< Updated upstream
     /*
      *   n % 0 =  N
      *   n % N =  N
@@ -1342,6 +1859,31 @@ export function dew() {
      *
      * The result depends on the modulo mode.
      *
+=======
+    /*
+     *   n % 0 =  N
+     *   n % N =  N
+     *   n % I =  n
+     *   0 % n =  0
+     *  -0 % n = -0
+     *   0 % 0 =  N
+     *   0 % N =  N
+     *   0 % I =  0
+     *   N % n =  N
+     *   N % 0 =  N
+     *   N % N =  N
+     *   N % I =  N
+     *   I % n =  N
+     *   I % 0 =  N
+     *   I % N =  N
+     *   I % I =  N
+     *
+     * Return a new Decimal whose value is the value of this Decimal modulo `y`, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+     * The result depends on the modulo mode.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1373,31 +1915,53 @@ export function dew() {
       external = true;
       return x.minus(q);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural exponential of the value of this Decimal,
      * i.e. the base e raised to the power the value of this Decimal, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural exponential of the value of this Decimal,
+     * i.e. the base e raised to the power the value of this Decimal, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.naturalExponential = P.exp = function () {
       return naturalExponential(this || _global);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural logarithm of the value of this Decimal,
      * rounded to `precision` significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural logarithm of the value of this Decimal,
+     * rounded to `precision` significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.naturalLogarithm = P.ln = function () {
       return naturalLogarithm(this || _global);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal negated, i.e. as if multiplied by
      * -1.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal negated, i.e. as if multiplied by
+     * -1.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1406,6 +1970,7 @@ export function dew() {
       x.s = -x.s;
       return finalise(x);
     };
+<<<<<<< Updated upstream
     /*
      *  n + 0 = n
      *  n + N = N
@@ -1426,6 +1991,28 @@ export function dew() {
      * Return a new Decimal whose value is the value of this Decimal plus `y`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
+=======
+    /*
+     *  n + 0 = n
+     *  n + N = N
+     *  n + I = I
+     *  0 + n = n
+     *  0 + 0 = 0
+     *  0 + N = N
+     *  0 + I = I
+     *  N + n = N
+     *  N + 0 = N
+     *  N + N = N
+     *  N + I = N
+     *  I + n = I
+     *  I + 0 = I
+     *  I + N = N
+     *  I + I = I
+     *
+     * Return a new Decimal whose value is the value of this Decimal plus `y`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1536,11 +2123,19 @@ export function dew() {
       y.e = getBase10Exponent(xd, e);
       return external ? finalise(y, pr, rm) : y;
     };
+<<<<<<< Updated upstream
     /*
      * Return the number of significant digits of the value of this Decimal.
      *
      * [z] {boolean|number} Whether to count integer-part trailing zeros: true, false, 1 or 0.
      *
+=======
+    /*
+     * Return the number of significant digits of the value of this Decimal.
+     *
+     * [z] {boolean|number} Whether to count integer-part trailing zeros: true, false, 1 or 0.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1558,10 +2153,17 @@ export function dew() {
 
       return k;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal rounded to a whole number using
      * rounding mode `rounding`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal rounded to a whole number using
+     * rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1570,6 +2172,7 @@ export function dew() {
           Ctor = x.constructor;
       return finalise(new Ctor(x), x.e + 1, Ctor.rounding);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the sine of the value in radians of this Decimal.
      *
@@ -1584,6 +2187,22 @@ export function dew() {
      * sin(-Infinity) = NaN
      * sin(NaN)       = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the sine of the value in radians of this Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-1, 1]
+     *
+     * sin(x) = x - x^3/3! + x^5/5! - ...
+     *
+     * sin(0)         = 0
+     * sin(-0)        = -0
+     * sin(Infinity)  = NaN
+     * sin(-Infinity) = NaN
+     * sin(NaN)       = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1603,6 +2222,7 @@ export function dew() {
       Ctor.rounding = rm;
       return finalise(quadrant > 2 ? x.neg() : x, pr, rm, true);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the square root of this Decimal, rounded to `precision`
      * significant digits using rounding mode `rounding`.
@@ -1614,6 +2234,19 @@ export function dew() {
      *  sqrt(0)  =  0
      *  sqrt(-0) = -0
      *
+=======
+    /*
+     * Return a new Decimal whose value is the square root of this Decimal, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     *  sqrt(-n) =  N
+     *  sqrt(N)  =  N
+     *  sqrt(-I) =  N
+     *  sqrt(I)  =  I
+     *  sqrt(0)  =  0
+     *  sqrt(-0) = -0
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1698,6 +2331,7 @@ export function dew() {
       external = true;
       return finalise(r, e, Ctor.rounding, m);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the tangent of the value in radians of this Decimal.
      *
@@ -1710,6 +2344,20 @@ export function dew() {
      * tan(-Infinity) = NaN
      * tan(NaN)       = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the tangent of the value in radians of this Decimal.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-Infinity, Infinity]
+     *
+     * tan(0)         = 0
+     * tan(-0)        = -0
+     * tan(Infinity)  = NaN
+     * tan(-Infinity) = NaN
+     * tan(NaN)       = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1731,6 +2379,7 @@ export function dew() {
       Ctor.rounding = rm;
       return finalise(quadrant == 2 || quadrant == 4 ? x.neg() : x, pr, rm, true);
     };
+<<<<<<< Updated upstream
     /*
      *  n * 0 = 0
      *  n * N = N
@@ -1751,6 +2400,28 @@ export function dew() {
      * Return a new Decimal whose value is this Decimal times `y`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
      *
+=======
+    /*
+     *  n * 0 = 0
+     *  n * N = N
+     *  n * I = I
+     *  0 * n = 0
+     *  0 * 0 = 0
+     *  0 * N = N
+     *  0 * I = N
+     *  N * n = N
+     *  N * 0 = N
+     *  N * N = N
+     *  N * I = N
+     *  I * n = I
+     *  I * 0 = N
+     *  I * N = N
+     *  I * I = I
+     *
+     * Return a new Decimal whose value is this Decimal times `y`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1818,6 +2489,7 @@ export function dew() {
       y.e = getBase10Exponent(r, e);
       return external ? finalise(y, Ctor.precision, Ctor.rounding) : y;
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal in base 2, round to `sd` significant
      * digits using rounding mode `rm`.
@@ -1827,12 +2499,24 @@ export function dew() {
      * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal in base 2, round to `sd` significant
+     * digits using rounding mode `rm`.
+     *
+     * If the optional `sd` argument is present then return binary exponential notation.
+     *
+     * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.toBinary = function (sd, rm) {
       return toStringBinary(this || _global, 2, sd, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `dp`
      * decimal places using rounding mode `rm` or `rounding` if `rm` is omitted.
@@ -1842,6 +2526,17 @@ export function dew() {
      * [dp] {number} Decimal places. Integer, 0 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `dp`
+     * decimal places using rounding mode `rm` or `rounding` if `rm` is omitted.
+     *
+     * If `dp` is omitted, return a new Decimal whose value is the value of this Decimal.
+     *
+     * [dp] {number} Decimal places. Integer, 0 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1854,6 +2549,7 @@ export function dew() {
       if (rm === void 0) rm = Ctor.rounding;else checkInt32(rm, 0, 8);
       return finalise(x, dp + x.e + 1, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal in exponential notation rounded to
      * `dp` fixed decimal places using rounding mode `rounding`.
@@ -1861,6 +2557,15 @@ export function dew() {
      * [dp] {number} Decimal places. Integer, 0 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal in exponential notation rounded to
+     * `dp` fixed decimal places using rounding mode `rounding`.
+     *
+     * [dp] {number} Decimal places. Integer, 0 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1880,6 +2585,7 @@ export function dew() {
 
       return x.isNeg() && !x.isZero() ? '-' + str : str;
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal in normal (fixed-point) notation to
      * `dp` fixed decimal places and rounded using rounding mode `rm` or `rounding` if `rm` is
@@ -1895,6 +2601,23 @@ export function dew() {
      * (-0).toFixed(3) is '0.000'.
      * (-0.5).toFixed(0) is '-0'.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal in normal (fixed-point) notation to
+     * `dp` fixed decimal places and rounded using rounding mode `rm` or `rounding` if `rm` is
+     * omitted.
+     *
+     * As with JavaScript numbers, (-0).toFixed(0) is '0', but e.g. (-0.00001).toFixed(0) is '-0'.
+     *
+     * [dp] {number} Decimal places. Integer, 0 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+     * (-0).toFixed(0) is '0', but (-0.1).toFixed(0) is '-0'.
+     * (-0).toFixed(1) is '0.0', but (-0.01).toFixed(1) is '-0.0'.
+     * (-0).toFixed(3) is '0.000'.
+     * (-0.5).toFixed(0) is '-0'.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1917,6 +2640,7 @@ export function dew() {
 
       return x.isNeg() && !x.isZero() ? '-' + str : str;
     };
+<<<<<<< Updated upstream
     /*
      * Return an array representing the value of this Decimal as a simple fraction with an integer
      * numerator and an integer denominator.
@@ -1927,6 +2651,18 @@ export function dew() {
      *
      * [maxD] {number|string|Decimal} Maximum denominator. Integer >= 1 and < Infinity.
      *
+=======
+    /*
+     * Return an array representing the value of this Decimal as a simple fraction with an integer
+     * numerator and an integer denominator.
+     *
+     * The denominator will be a positive non-zero value less than or equal to the specified maximum
+     * denominator. If a maximum denominator is not specified, the denominator will be the lowest
+     * value necessary to represent the number exactly.
+     *
+     * [maxD] {number|string|Decimal} Maximum denominator. Integer >= 1 and < Infinity.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -1992,6 +2728,7 @@ export function dew() {
       external = true;
       return r;
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal in base 16, round to `sd` significant
      * digits using rounding mode `rm`.
@@ -2001,12 +2738,24 @@ export function dew() {
      * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal in base 16, round to `sd` significant
+     * digits using rounding mode `rm`.
+     *
+     * If the optional `sd` argument is present then return binary exponential notation.
+     *
+     * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.toHexadecimal = P.toHex = function (sd, rm) {
       return toStringBinary(this || _global, 16, sd, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Returns a new Decimal whose value is the nearest multiple of `y` in the direction of rounding
      * mode `rm`, or `Decimal.rounding` if `rm` is omitted, to the value of this Decimal.
@@ -2022,6 +2771,23 @@ export function dew() {
      * 'toNearest() rounding mode not an integer: {rm}'
      * 'toNearest() rounding mode out of range: {rm}'
      *
+=======
+    /*
+     * Returns a new Decimal whose value is the nearest multiple of `y` in the direction of rounding
+     * mode `rm`, or `Decimal.rounding` if `rm` is omitted, to the value of this Decimal.
+     *
+     * The return value will always have the same sign as this Decimal, unless either this Decimal
+     * or `y` is NaN, in which case the return value will be also be NaN.
+     *
+     * The return value is not affected by the value of `precision`.
+     *
+     * y {number|string|Decimal} The magnitude to round to a multiple of.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+     * 'toNearest() rounding mode not an integer: {rm}'
+     * 'toNearest() rounding mode out of range: {rm}'
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2066,16 +2832,24 @@ export function dew() {
 
       return x;
     };
+<<<<<<< Updated upstream
     /*
      * Return the value of this Decimal converted to a number primitive.
      * Zero keeps its sign.
      *
+=======
+    /*
+     * Return the value of this Decimal converted to a number primitive.
+     * Zero keeps its sign.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.toNumber = function () {
       return +(this || _global);
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal in base 8, round to `sd` significant
      * digits using rounding mode `rm`.
@@ -2085,12 +2859,24 @@ export function dew() {
      * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal in base 8, round to `sd` significant
+     * digits using rounding mode `rm`.
+     *
+     * If the optional `sd` argument is present then return binary exponential notation.
+     *
+     * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.toOctal = function (sd, rm) {
       return toStringBinary(this || _global, 8, sd, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal raised to the power `y`, rounded
      * to `precision` significant digits using rounding mode `rounding`.
@@ -2132,6 +2918,49 @@ export function dew() {
      *
      * y {number|string|Decimal} The power to which to raise this Decimal.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal raised to the power `y`, rounded
+     * to `precision` significant digits using rounding mode `rounding`.
+     *
+     * ECMAScript compliant.
+     *
+     *   pow(x, NaN)                           = NaN
+     *   pow(x, ±0)                            = 1
+       *   pow(NaN, non-zero)                    = NaN
+     *   pow(abs(x) > 1, +Infinity)            = +Infinity
+     *   pow(abs(x) > 1, -Infinity)            = +0
+     *   pow(abs(x) == 1, ±Infinity)           = NaN
+     *   pow(abs(x) < 1, +Infinity)            = +0
+     *   pow(abs(x) < 1, -Infinity)            = +Infinity
+     *   pow(+Infinity, y > 0)                 = +Infinity
+     *   pow(+Infinity, y < 0)                 = +0
+     *   pow(-Infinity, odd integer > 0)       = -Infinity
+     *   pow(-Infinity, even integer > 0)      = +Infinity
+     *   pow(-Infinity, odd integer < 0)       = -0
+     *   pow(-Infinity, even integer < 0)      = +0
+     *   pow(+0, y > 0)                        = +0
+     *   pow(+0, y < 0)                        = +Infinity
+     *   pow(-0, odd integer > 0)              = -0
+     *   pow(-0, even integer > 0)             = +0
+     *   pow(-0, odd integer < 0)              = -Infinity
+     *   pow(-0, even integer < 0)             = +Infinity
+     *   pow(finite x < 0, finite non-integer) = NaN
+     *
+     * For non-integer or very large exponents pow(x, y) is calculated using
+     *
+     *   x^y = exp(y*ln(x))
+     *
+     * Assuming the first 15 rounding digits are each equally likely to be any digit 0-9, the
+     * probability of an incorrectly rounded result
+     * P([49]9{14} | [50]0{14}) = 2 * 0.2 * 10^-14 = 4e-15 = 1/2.5e+14
+     * i.e. 1 in 250,000,000,000,000
+     *
+     * If a result is incorrectly rounded the maximum error will be 1 ulp (unit in last place).
+     *
+     * y {number|string|Decimal} The power to which to raise this Decimal.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2214,6 +3043,7 @@ export function dew() {
       Ctor.rounding = rm;
       return finalise(r, pr, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal rounded to `sd` significant digits
      * using rounding mode `rounding`.
@@ -2224,6 +3054,18 @@ export function dew() {
      * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
      * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal rounded to `sd` significant digits
+     * using rounding mode `rounding`.
+     *
+     * Return exponential notation if `sd` is less than the number of digits necessary to represent
+     * the integer part of the value in normal notation.
+     *
+     * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2243,6 +3085,7 @@ export function dew() {
 
       return x.isNeg() && !x.isZero() ? '-' + str : str;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `sd`
      * significant digits using rounding mode `rm`, or to `precision` and `rounding` respectively if
@@ -2256,6 +3099,21 @@ export function dew() {
      * 'toSD() rounding mode not an integer: {rm}'
      * 'toSD() rounding mode out of range: {rm}'
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal rounded to a maximum of `sd`
+     * significant digits using rounding mode `rm`, or to `precision` and `rounding` respectively if
+     * omitted.
+     *
+     * [sd] {number} Significant digits. Integer, 1 to MAX_DIGITS inclusive.
+     * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
+     *
+     * 'toSD() digits out of range: {sd}'
+     * 'toSD() digits not an integer: {sd}'
+     * 'toSD() rounding mode not an integer: {rm}'
+     * 'toSD() rounding mode out of range: {rm}'
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2273,12 +3131,21 @@ export function dew() {
 
       return finalise(new Ctor(x), sd, rm);
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal.
      *
      * Return exponential notation if this Decimal has a positive exponent equal to or greater than
      * `toExpPos`, or a negative exponent equal to or less than `toExpNeg`.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal.
+     *
+     * Return exponential notation if this Decimal has a positive exponent equal to or greater than
+     * `toExpPos`, or a negative exponent equal to or less than `toExpNeg`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2288,19 +3155,32 @@ export function dew() {
           str = finiteToString(x, x.e <= Ctor.toExpNeg || x.e >= Ctor.toExpPos);
       return x.isNeg() && !x.isZero() ? '-' + str : str;
     };
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of this Decimal truncated to a whole number.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of this Decimal truncated to a whole number.
+     *
+>>>>>>> Stashed changes
      */
 
 
     P.truncated = P.trunc = function () {
       return finalise(new (this || _global).constructor(this || _global), (this || _global).e + 1, 1);
     };
+<<<<<<< Updated upstream
     /*
      * Return a string representing the value of this Decimal.
      * Unlike `toString`, negative zero will include the minus sign.
      *
+=======
+    /*
+     * Return a string representing the value of this Decimal.
+     * Unlike `toString`, negative zero will include the minus sign.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2310,6 +3190,7 @@ export function dew() {
           str = finiteToString(x, x.e <= Ctor.toExpNeg || x.e >= Ctor.toExpPos);
       return x.isNeg() ? '-' + str : str;
     };
+<<<<<<< Updated upstream
     /*
     // Add aliases to match BigDecimal method names.
     // P.add = P.plus;
@@ -2365,6 +3246,63 @@ export function dew() {
      *
      *  Throws:                  P.logarithm, P.precision, P.toFraction, checkInt32, getLn10, getPi,
      *                           naturalLogarithm, config, parseOther, random, Decimal
+=======
+    /*
+    // Add aliases to match BigDecimal method names.
+    // P.add = P.plus;
+    P.subtract = P.minus;
+    P.multiply = P.times;
+    P.divide = P.div;
+    P.remainder = P.mod;
+    P.compareTo = P.cmp;
+    P.negate = P.neg;
+     */
+    // Helper functions for Decimal.prototype (P) and/or Decimal methods, and their callers.
+
+    /*
+     *  digitsToString           P.cubeRoot, P.logarithm, P.squareRoot, P.toFraction, P.toPower,
+     *                           finiteToString, naturalExponential, naturalLogarithm
+     *  checkInt32               P.toDecimalPlaces, P.toExponential, P.toFixed, P.toNearest,
+     *                           P.toPrecision, P.toSignificantDigits, toStringBinary, random
+     *  checkRoundingDigits      P.logarithm, P.toPower, naturalExponential, naturalLogarithm
+     *  convertBase              toStringBinary, parseOther
+     *  cos                      P.cos
+     *  divide                   P.atanh, P.cubeRoot, P.dividedBy, P.dividedToIntegerBy,
+     *                           P.logarithm, P.modulo, P.squareRoot, P.tan, P.tanh, P.toFraction,
+     *                           P.toNearest, toStringBinary, naturalExponential, naturalLogarithm,
+     *                           taylorSeries, atan2, parseOther
+     *  finalise                 P.absoluteValue, P.atan, P.atanh, P.ceil, P.cos, P.cosh,
+     *                           P.cubeRoot, P.dividedToIntegerBy, P.floor, P.logarithm, P.minus,
+     *                           P.modulo, P.negated, P.plus, P.round, P.sin, P.sinh, P.squareRoot,
+     *                           P.tan, P.times, P.toDecimalPlaces, P.toExponential, P.toFixed,
+     *                           P.toNearest, P.toPower, P.toPrecision, P.toSignificantDigits,
+     *                           P.truncated, divide, getLn10, getPi, naturalExponential,
+     *                           naturalLogarithm, ceil, floor, round, trunc
+     *  finiteToString           P.toExponential, P.toFixed, P.toPrecision, P.toString, P.valueOf,
+     *                           toStringBinary
+     *  getBase10Exponent        P.minus, P.plus, P.times, parseOther
+     *  getLn10                  P.logarithm, naturalLogarithm
+     *  getPi                    P.acos, P.asin, P.atan, toLessThanHalfPi, atan2
+     *  getPrecision             P.precision, P.toFraction
+     *  getZeroString            digitsToString, finiteToString
+     *  intPow                   P.toPower, parseOther
+     *  isOdd                    toLessThanHalfPi
+     *  maxOrMin                 max, min
+     *  naturalExponential       P.naturalExponential, P.toPower
+     *  naturalLogarithm         P.acosh, P.asinh, P.atanh, P.logarithm, P.naturalLogarithm,
+     *                           P.toPower, naturalExponential
+     *  nonFiniteToString        finiteToString, toStringBinary
+     *  parseDecimal             Decimal
+     *  parseOther               Decimal
+     *  sin                      P.sin
+     *  taylorSeries             P.cosh, P.sinh, cos, sin
+     *  toLessThanHalfPi         P.cos, P.sin
+     *  toStringBinary           P.toBinary, P.toHexadecimal, P.toOctal
+     *  truncate                 intPow
+     *
+     *  Throws:                  P.logarithm, P.precision, P.toFraction, checkInt32, getLn10, getPi,
+     *                           naturalLogarithm, config, parseOther, random, Decimal
+>>>>>>> Stashed changes
      */
 
 
@@ -2405,10 +3343,17 @@ export function dew() {
         throw Error(invalidArgument + i);
       }
     }
+<<<<<<< Updated upstream
     /*
      * Check 5 rounding digits if `repeating` is null, 4 otherwise.
      * `repeating == null` if caller is `log` or `pow`,
      * `repeating != null` if caller is `naturalLogarithm` or `naturalExponential`.
+=======
+    /*
+     * Check 5 rounding digits if `repeating` is null, 4 otherwise.
+     * `repeating == null` if caller is `log` or `pow`,
+     * `repeating != null` if caller is `naturalLogarithm` or `naturalExponential`.
+>>>>>>> Stashed changes
      */
 
 
@@ -2477,10 +3422,17 @@ export function dew() {
 
       return arr.reverse();
     }
+<<<<<<< Updated upstream
     /*
      * cos(x) = 1 - x^2/2! + x^4/4! - ...
      * |x| < pi/2
      *
+=======
+    /*
+     * cos(x) = 1 - x^2/2! + x^4/4! - ...
+     * |x| < pi/2
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -2510,8 +3462,13 @@ export function dew() {
       Ctor.precision -= k;
       return x;
     }
+<<<<<<< Updated upstream
     /*
      * Perform division in the specified base.
+=======
+    /*
+     * Perform division in the specified base.
+>>>>>>> Stashed changes
      */
 
 
@@ -2761,9 +3718,15 @@ export function dew() {
         return q;
       };
     }();
+<<<<<<< Updated upstream
     /*
      * Round `x` to `sd` significant digits using rounding mode `rm`.
      * Check for over/under-flow.
+=======
+    /*
+     * Round `x` to `sd` significant digits using rounding mode `rm`.
+     * Check for over/under-flow.
+>>>>>>> Stashed changes
      */
 
 
@@ -2999,12 +3962,21 @@ export function dew() {
 
       return zs;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the value of Decimal `x` to the power `n`, where `n` is an
      * integer of type number.
      *
      * Implements 'exponentiation by squaring'. Called by `pow` and `parseOther`.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the value of Decimal `x` to the power `n`, where `n` is an
+     * integer of type number.
+     *
+     * Implements 'exponentiation by squaring'. Called by `pow` and `parseOther`.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3042,8 +4014,13 @@ export function dew() {
     function isOdd(n) {
       return n.d[n.d.length - 1] & 1;
     }
+<<<<<<< Updated upstream
     /*
      * Handle `max` and `min`. `ltgt` is 'lt' or 'gt'.
+=======
+    /*
+     * Handle `max` and `min`. `ltgt` is 'lt' or 'gt'.
+>>>>>>> Stashed changes
      */
 
 
@@ -3065,6 +4042,7 @@ export function dew() {
 
       return x;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural exponential of `x` rounded to `sd` significant
      * digits.
@@ -3095,6 +4073,38 @@ export function dew() {
      *
      *  The result will always be correctly rounded.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural exponential of `x` rounded to `sd` significant
+     * digits.
+     *
+     * Taylor/Maclaurin series.
+     *
+     * exp(x) = x^0/0! + x^1/1! + x^2/2! + x^3/3! + ...
+     *
+     * Argument reduction:
+     *   Repeat x = x / 32, k += 5, until |x| < 0.1
+     *   exp(x) = exp(x / 2^k)^(2^k)
+     *
+     * Previously, the argument was initially reduced by
+     * exp(x) = exp(r) * 10^k  where r = x - k * ln10, k = floor(x / ln10)
+     * to first put r in the range [0, ln10], before dividing by 32 until |x| < 0.1, but this was
+     * found to be slower than just dividing repeatedly by 32 as above.
+     *
+     * Max integer argument: exp('20723265836946413') = 6.3e+9000000000000000
+     * Min integer argument: exp('-20723265836946411') = 1.2e-9000000000000000
+     * (Math object integer min/max: Math.exp(709) = 8.2e+307, Math.exp(-745) = 5e-324)
+     *
+     *  exp(Infinity)  = Infinity
+     *  exp(-Infinity) = 0
+     *  exp(NaN)       = NaN
+     *  exp(±0)        = 1
+     *
+     *  exp(x) is non-terminating for any finite, non-zero x.
+     *
+     *  The result will always be correctly rounded.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3172,6 +4182,7 @@ export function dew() {
         sum = t;
       }
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural logarithm of `x` rounded to `sd` significant
      * digits.
@@ -3186,6 +4197,22 @@ export function dew() {
      *
      *  ln(n) (n != 1) is non-terminating.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural logarithm of `x` rounded to `sd` significant
+     * digits.
+     *
+     *  ln(-n)        = NaN
+     *  ln(0)         = -Infinity
+     *  ln(-0)        = -Infinity
+     *  ln(1)         = 0
+     *  ln(Infinity)  = Infinity
+     *  ln(-Infinity) = NaN
+     *  ln(NaN)       = NaN
+     *
+     *  ln(n) (n != 1) is non-terminating.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3310,8 +4337,13 @@ export function dew() {
       // Unsigned.
       return String(x.s * x.s / 0);
     }
+<<<<<<< Updated upstream
     /*
      * Parse the value of a new Decimal `x` from string `str`.
+=======
+    /*
+     * Parse the value of a new Decimal `x` from string `str`.
+>>>>>>> Stashed changes
      */
 
 
@@ -3384,8 +4416,13 @@ export function dew() {
 
       return x;
     }
+<<<<<<< Updated upstream
     /*
      * Parse the value of a new Decimal `x` from a string `str`, which is not a decimal value.
+=======
+    /*
+     * Parse the value of a new Decimal `x` from a string `str`, which is not a decimal value.
+>>>>>>> Stashed changes
      */
 
 
@@ -3455,10 +4492,17 @@ export function dew() {
       external = true;
       return x;
     }
+<<<<<<< Updated upstream
     /*
      * sin(x) = x - x^3/3! + x^5/5! - ...
      * |x| < pi/2
      *
+=======
+    /*
+     * sin(x) = x - x^3/3! + x^5/5! - ...
+     * |x| < pi/2
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3564,10 +4608,17 @@ export function dew() {
 
       return x.minus(pi).abs();
     }
+<<<<<<< Updated upstream
     /*
      * Return the value of Decimal `x` as a string in base `baseOut`.
      *
      * If the optional `sd` argument is present include a binary exponent suffix.
+=======
+    /*
+     * Return the value of Decimal `x` as a string in base `baseOut`.
+     *
+     * If the optional `sd` argument is present include a binary exponent suffix.
+>>>>>>> Stashed changes
      */
 
 
@@ -3712,6 +4763,7 @@ export function dew() {
       }
     } // Decimal methods
 
+<<<<<<< Updated upstream
     /*
      *  abs
      *  acos
@@ -3759,35 +4811,102 @@ export function dew() {
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     *  abs
+     *  acos
+     *  acosh
+     *  add
+     *  asin
+     *  asinh
+     *  atan
+     *  atanh
+     *  atan2
+     *  cbrt
+     *  ceil
+     *  clone
+     *  config
+     *  cos
+     *  cosh
+     *  div
+     *  exp
+     *  floor
+     *  hypot
+     *  ln
+     *  log
+     *  log2
+     *  log10
+     *  max
+     *  min
+     *  mod
+     *  mul
+     *  pow
+     *  random
+     *  round
+     *  set
+     *  sign
+     *  sin
+     *  sinh
+     *  sqrt
+     *  sub
+     *  tan
+     *  tanh
+     *  trunc
+     */
+
+    /*
+     * Return a new Decimal whose value is the absolute value of `x`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function abs(x) {
       return new (this || _global)(x).abs();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arccosine in radians of `x`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arccosine in radians of `x`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function acos(x) {
       return new (this || _global)(x).acos();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic cosine of `x`, rounded to
      * `precision` significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic cosine of `x`, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function acosh(x) {
       return new (this || _global)(x).acosh();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the sum of `x` and `y`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
@@ -3795,60 +4914,106 @@ export function dew() {
      * x {number|string|Decimal}
      * y {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the sum of `x` and `y`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     * y {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function add(x, y) {
       return new (this || _global)(x).plus(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arcsine in radians of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arcsine in radians of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function asin(x) {
       return new (this || _global)(x).asin();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic sine of `x`, rounded to
      * `precision` significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic sine of `x`, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function asinh(x) {
       return new (this || _global)(x).asinh();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arctangent in radians of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arctangent in radians of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function atan(x) {
       return new (this || _global)(x).atan();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the inverse of the hyperbolic tangent of `x`, rounded to
      * `precision` significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the inverse of the hyperbolic tangent of `x`, rounded to
+     * `precision` significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function atanh(x) {
       return new (this || _global)(x).atanh();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the arctangent in radians of `y/x` in the range -pi to pi
      * (inclusive), rounded to `precision` significant digits using rounding mode `rounding`.
@@ -3873,6 +5038,32 @@ export function dew() {
      * atan2(NaN, x) = NaN
      * atan2(y, NaN) = NaN
      *
+=======
+    /*
+     * Return a new Decimal whose value is the arctangent in radians of `y/x` in the range -pi to pi
+     * (inclusive), rounded to `precision` significant digits using rounding mode `rounding`.
+     *
+     * Domain: [-Infinity, Infinity]
+     * Range: [-pi, pi]
+     *
+     * y {number|string|Decimal} The y-coordinate.
+     * x {number|string|Decimal} The x-coordinate.
+     *
+     * atan2(±0, -0)               = ±pi
+     * atan2(±0, +0)               = ±0
+     * atan2(±0, -x)               = ±pi for x > 0
+     * atan2(±0, x)                = ±0 for x > 0
+     * atan2(-y, ±0)               = -pi/2 for y > 0
+     * atan2(y, ±0)                = pi/2 for y > 0
+     * atan2(±y, -Infinity)        = ±pi for finite y > 0
+     * atan2(±y, +Infinity)        = ±0 for finite y > 0
+     * atan2(±Infinity, x)         = ±pi/2 for finite x
+     * atan2(±Infinity, -Infinity) = ±3*pi/4
+     * atan2(±Infinity, +Infinity) = ±pi/4
+     * atan2(NaN, x) = NaN
+     * atan2(y, NaN) = NaN
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3909,29 +5100,47 @@ export function dew() {
 
       return r;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the cube root of `x`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the cube root of `x`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function cbrt(x) {
       return new (this || _global)(x).cbrt();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` rounded to an integer using `ROUND_CEIL`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` rounded to an integer using `ROUND_CEIL`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function ceil(x) {
       return finalise(x = new (this || _global)(x), x.e + 1, 2);
     }
+<<<<<<< Updated upstream
     /*
      * Configure global settings for a Decimal constructor.
      *
@@ -3949,6 +5158,25 @@ export function dew() {
      *
      * E.g. Decimal.config({ precision: 20, rounding: 4 })
      *
+=======
+    /*
+     * Configure global settings for a Decimal constructor.
+     *
+     * `obj` is an object with one or more of the following properties,
+     *
+     *   precision  {number}
+     *   rounding   {number}
+     *   toExpNeg   {number}
+     *   toExpPos   {number}
+     *   maxE       {number}
+     *   minE       {number}
+     *   modulo     {number}
+     *   crypto     {boolean|number}
+     *   defaults   {true}
+     *
+     * E.g. Decimal.config({ precision: 20, rounding: 4 })
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -3988,45 +5216,79 @@ export function dew() {
 
       return this || _global;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the cosine of `x`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the cosine of `x`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function cos(x) {
       return new (this || _global)(x).cos();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic cosine of `x`, rounded to precision
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic cosine of `x`, rounded to precision
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function cosh(x) {
       return new (this || _global)(x).cosh();
     }
+<<<<<<< Updated upstream
     /*
      * Create and return a Decimal constructor with the same configuration properties as this Decimal
      * constructor.
      *
+=======
+    /*
+     * Create and return a Decimal constructor with the same configuration properties as this Decimal
+     * constructor.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function clone(obj) {
       var i, p, ps;
+<<<<<<< Updated upstream
       /*
        * The Decimal constructor and exported function.
        * Return a new Decimal instance.
        *
        * v {number|string|Decimal} A numeric value.
        *
+=======
+      /*
+       * The Decimal constructor and exported function.
+       * Return a new Decimal instance.
+       *
+       * v {number|string|Decimal} A numeric value.
+       *
+>>>>>>> Stashed changes
        */
 
       function Decimal(v) {
@@ -4202,6 +5464,7 @@ export function dew() {
       Decimal.config(obj);
       return Decimal;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` divided by `y`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
@@ -4209,35 +5472,62 @@ export function dew() {
      * x {number|string|Decimal}
      * y {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` divided by `y`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     * y {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function div(x, y) {
       return new (this || _global)(x).div(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural exponential of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} The power to which to raise the base of the natural log.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural exponential of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} The power to which to raise the base of the natural log.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function exp(x) {
       return new (this || _global)(x).exp();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` round to an integer using `ROUND_FLOOR`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` round to an integer using `ROUND_FLOOR`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function floor(x) {
       return finalise(x = new (this || _global)(x), x.e + 1, 3);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the square root of the sum of the squares of the arguments,
      * rounded to `precision` significant digits using rounding mode `rounding`.
@@ -4246,6 +5536,16 @@ export function dew() {
      *
      * arguments {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the square root of the sum of the squares of the arguments,
+     * rounded to `precision` significant digits using rounding mode `rounding`.
+     *
+     * hypot(a, b, ...) = sqrt(a^2 + b^2 + ...)
+     *
+     * arguments {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -4273,28 +5573,45 @@ export function dew() {
       external = true;
       return t.sqrt();
     }
+<<<<<<< Updated upstream
     /*
      * Return true if object is a Decimal instance (where Decimal is any Decimal constructor),
      * otherwise return false.
      *
+=======
+    /*
+     * Return true if object is a Decimal instance (where Decimal is any Decimal constructor),
+     * otherwise return false.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function isDecimalInstance(obj) {
       return obj instanceof Decimal || obj && obj.name === '[object Decimal]' || false;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the natural logarithm of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the natural logarithm of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function ln(x) {
       return new (this || _global)(x).ln();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the log of `x` to the base `y`, or to base 10 if no base
      * is specified, rounded to `precision` significant digits using rounding mode `rounding`.
@@ -4304,58 +5621,104 @@ export function dew() {
      * x {number|string|Decimal} The argument of the logarithm.
      * y {number|string|Decimal} The base of the logarithm.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the log of `x` to the base `y`, or to base 10 if no base
+     * is specified, rounded to `precision` significant digits using rounding mode `rounding`.
+     *
+     * log[y](x)
+     *
+     * x {number|string|Decimal} The argument of the logarithm.
+     * y {number|string|Decimal} The base of the logarithm.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function log(x, y) {
       return new (this || _global)(x).log(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the base 2 logarithm of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the base 2 logarithm of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function log2(x) {
       return new (this || _global)(x).log(2);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the base 10 logarithm of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the base 10 logarithm of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function log10(x) {
       return new (this || _global)(x).log(10);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the maximum of the arguments.
      *
      * arguments {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the maximum of the arguments.
+     *
+     * arguments {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function max() {
       return maxOrMin(this || _global, arguments, 'lt');
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the minimum of the arguments.
      *
      * arguments {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the minimum of the arguments.
+     *
+     * arguments {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function min() {
       return maxOrMin(this || _global, arguments, 'gt');
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` modulo `y`, rounded to `precision` significant digits
      * using rounding mode `rounding`.
@@ -4363,12 +5726,22 @@ export function dew() {
      * x {number|string|Decimal}
      * y {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` modulo `y`, rounded to `precision` significant digits
+     * using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     * y {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function mod(x, y) {
       return new (this || _global)(x).mod(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` multiplied by `y`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
@@ -4376,12 +5749,22 @@ export function dew() {
      * x {number|string|Decimal}
      * y {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` multiplied by `y`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     * y {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function mul(x, y) {
       return new (this || _global)(x).mul(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` raised to the power `y`, rounded to precision
      * significant digits using rounding mode `rounding`.
@@ -4389,12 +5772,22 @@ export function dew() {
      * x {number|string|Decimal} The base.
      * y {number|string|Decimal} The exponent.
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` raised to the power `y`, rounded to precision
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} The base.
+     * y {number|string|Decimal} The exponent.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function pow(x, y) {
       return new (this || _global)(x).pow(y);
     }
+<<<<<<< Updated upstream
     /*
      * Returns a new Decimal with a random value equal to or greater than 0 and less than 1, and with
      * `sd`, or `Decimal.precision` if `sd` is omitted, significant digits (or less if trailing zeros
@@ -4402,6 +5795,15 @@ export function dew() {
      *
      * [sd] {number} Significant digits. Integer, 0 to MAX_DIGITS inclusive.
      *
+=======
+    /*
+     * Returns a new Decimal with a random value equal to or greater than 0 and less than 1, and with
+     * `sd`, or `Decimal.precision` if `sd` is omitted, significant digits (or less if trailing zeros
+     * are produced).
+     *
+     * [sd] {number} Significant digits. Integer, 0 to MAX_DIGITS inclusive.
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -4489,6 +5891,7 @@ export function dew() {
       r.d = rd;
       return r;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` rounded to an integer using rounding mode `rounding`.
      *
@@ -4496,12 +5899,22 @@ export function dew() {
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` rounded to an integer using rounding mode `rounding`.
+     *
+     * To emulate `Math.round`, set rounding to 7 (ROUND_HALF_CEIL).
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function round(x) {
       return finalise(x = new (this || _global)(x), x.e + 1, (this || _global).rounding);
     }
+<<<<<<< Updated upstream
     /*
      * Return
      *   1    if x > 0,
@@ -4512,6 +5925,18 @@ export function dew() {
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return
+     *   1    if x > 0,
+     *  -1    if x < 0,
+     *   0    if x is 0,
+     *  -0    if x is -0,
+     *   NaN  otherwise
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
@@ -4519,42 +5944,70 @@ export function dew() {
       x = new (this || _global)(x);
       return x.d ? x.d[0] ? x.s : 0 * x.s : x.s || NaN;
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the sine of `x`, rounded to `precision` significant digits
      * using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the sine of `x`, rounded to `precision` significant digits
+     * using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function sin(x) {
       return new (this || _global)(x).sin();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic sine of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic sine of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function sinh(x) {
       return new (this || _global)(x).sinh();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the square root of `x`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is the square root of `x`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function sqrt(x) {
       return new (this || _global)(x).sqrt();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` minus `y`, rounded to `precision` significant digits
      * using rounding mode `rounding`.
@@ -4562,41 +6015,76 @@ export function dew() {
      * x {number|string|Decimal}
      * y {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` minus `y`, rounded to `precision` significant digits
+     * using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal}
+     * y {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 
     function sub(x, y) {
       return new (this || _global)(x).sub(y);
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the tangent of `x`, rounded to `precision` significant
      * digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the tangent of `x`, rounded to `precision` significant
+     * digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function tan(x) {
       return new (this || _global)(x).tan();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is the hyperbolic tangent of `x`, rounded to `precision`
      * significant digits using rounding mode `rounding`.
      *
      * x {number|string|Decimal} A value in radians.
      *
+=======
+    /*
+     * Return a new Decimal whose value is the hyperbolic tangent of `x`, rounded to `precision`
+     * significant digits using rounding mode `rounding`.
+     *
+     * x {number|string|Decimal} A value in radians.
+     *
+>>>>>>> Stashed changes
      */
 
 
     function tanh(x) {
       return new (this || _global)(x).tanh();
     }
+<<<<<<< Updated upstream
     /*
      * Return a new Decimal whose value is `x` truncated to an integer.
      *
      * x {number|string|Decimal}
      *
+=======
+    /*
+     * Return a new Decimal whose value is `x` truncated to an integer.
+     *
+     * x {number|string|Decimal}
+     *
+>>>>>>> Stashed changes
      */
 
 

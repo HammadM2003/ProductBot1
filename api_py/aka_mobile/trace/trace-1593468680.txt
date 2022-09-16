@@ -1008,6 +1008,7 @@ Branch Metrics\, Inc.
 O=Branch Metrics\, Inc.
 *.branch.io
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
 
 CN=*.branch.io
@@ -1047,6 +1048,47 @@ RiskifiedID: -32857659484406668401593468680102
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+=======
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+
+CN=*.branch.io
+o=branch metrics\, inc.,cn=*.branch.io
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468680102
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+mitmproxy
+
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468680102
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+>>>>>>> Stashed changes
 
 O=mitmproxy
 mitmproxy
@@ -1066,6 +1108,7 @@ api2.branch.io.
 *.branch.io.
 {"device_fingerprint_id":"802302602813847758","identity_id":"806266667110290341","hardware_id":"60b4488c57919beb","is_hardware_id_real":true,"brand":"OnePlus","model":"ONEPLUS A5010","screen_dpi":420,"screen_height":2034,"screen_width":1080,"wifi":true,"ui_mode":"UI_MODE_TYPE_NORMAL","os":"Android","os_version":28,"cpu_type":"aarch64","build":"ONEPLUS A5010_43_191008","locale":"en_US","connection_type":"wifi","device_carrier":"Wireless","os_version_android":"9","country":"US","language":"en","local_ip":"10.0.1.82","app_version":"2.6.2","facebook_app_link_checked":false,"is_referrable":0,"debug":false,"update":1,"latest_install_time":1592522445177,"latest_update_time":1593429859774,"first_install_time":1592522445177,"previous_update_time":1593429859774,"environment":"FULL_APP","cd":{"mv":"-1","pn":"com.WinnersCircle"},"metadata":{},"advertising_ids":{"aaid":"c4163680-e3f1-464d-8f16-48049d9e4ad2"},"lat_val":0,"google_advertising_id":"c4163680-e3f1-464d-8f16-48049d9e4ad2","instrumentation":{"v1\/open-qwt":"0"},"sdk":"android5.0.1","branch_key":"key_live_adIdSsyAFvvZ02YSv00fyeeiuEoaUk0I","retryNumber":0}
 POST /v1/open HTTP/1.1
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 Connection: close
@@ -1089,6 +1132,31 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/config
 directory "."
@@ -1201,13 +1269,18 @@ java.net.CookieManager.handlers
 
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
+=======
+HTTP/1.1 400 Bad Request
+>>>>>>> Stashed changes
 
 PreferenceDataStore - Saving preference: com.urbanairship.remotedata.LAST_REFRESH_TIME value: 1593468681422
 {}
 content://com.WinnersCircle.urbanairship.provider/preferences
 uri, content://com.WinnersCircle.urbanairship.provider/preferences
 com.WinnersCircle.urbanairship.provider
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 Connection: close
@@ -1222,6 +1295,22 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 JobInfo{action=ACTION_REFRESH, id=10, extras='{}', airshipComponentName='com.urbanairship.remotedata.RemoteData', isNetworkAccessRequired=true, initialDelay=0, persistent=false}
 preferences
@@ -2294,6 +2383,7 @@ GoogleApiClient is not configured to use SafetyNet.API required for this call.
 cdn.branch.io:443
 cdn.branch.io:443
 CONNECT cdn.branch.io:443 HTTP/1.1
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -2301,6 +2391,15 @@ Host: prodmobloy2.finishline.com
 Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+>>>>>>> Stashed changes
 
 [5, 4, 3, 15]
 GoogleApiClient is not configured to use SafetyNet.API required for this call.
@@ -2321,8 +2420,13 @@ GoogleApiClient is not configured to use SafetyNet.API required for this call.
 GoogleApiClient is not configured to use SafetyNet.API required for this call.
 [5, 4, 3, 15]
 GoogleApiClient is not configured to use SafetyNet.API required for this call.
+<<<<<<< Updated upstream
 HTTP/1.0 200 Connection established
 
+=======
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 The Finish Line\,Inc.
 O=The Finish Line\,Inc.
 www.finishline.com
@@ -2530,6 +2634,7 @@ www.finishline.com
 CN=www.finishline.com
 O=The Finish Line\,Inc.,CN=www.finishline.com
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -2592,10 +2697,75 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468682084
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468682084
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -2612,6 +2782,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -7974,6 +8162,7 @@ b34b1590e3fa73b12c5bbf7d542444b2.0
 prodmobloy2.finishline.com
 https//prodmobloy2.finishline.com:443?proxy=10.0.1.69:8085
 Using proxy: 10.0.1.69:8085
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -7984,6 +8173,18 @@ Host: prodmobloy2.finishline.com
 
 HTTP/1.0 200 Connection established
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 android.os.BinderProxy@bc0ffd6
 CreateServiceData{token=android.os.BinderProxy@bc0ffd6 className=com.urbanairship.job.AndroidJobService packageName=com.WinnersCircle intent=null}
 serviceCreate: CreateServiceData{token=android.os.BinderProxy@bc0ffd6 className=com.urbanairship.job.AndroidJobService packageName=com.WinnersCircle intent=null}
@@ -8178,6 +8379,7 @@ www.finishline.com
 CN=www.finishline.com
 O=The Finish Line\,Inc.,CN=www.finishline.com
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -8240,6 +8442,70 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$3000,1000,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468690714
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$3000,1000,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468690714
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 java.net.CookieManager.level
@@ -8257,6 +8523,7 @@ java.net.handlers
 java.net.CookieManager.handlers
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -8273,6 +8540,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -9404,6 +9689,7 @@ EventManager - Requesting to schedule event upload with delay 58851ms.
 /data/user/0/com.WinnersCircle/files/user.preferences
  (No such file or directory)
 /data/user/0/com.WinnersCircle/files/user.preferences (No such file or directory)
+<<<<<<< Updated upstream
 CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
@@ -9411,6 +9697,15 @@ Host: www.res-x.com
 Proxying: CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
+=======
+CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+
+Proxying: CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+>>>>>>> Stashed changes
 
 /data/user/0/com.WinnersCircle/files/user.preferences
  (No such file or directory)
@@ -9515,8 +9810,13 @@ Job - Finished: JobInfo{action=ACTION_UPDATE_TAG_GROUPS, id=3, extras='{}', airs
 AirshipService - Component finished job with startId: 1
 AirshipService - Component finished job with startId: 2
 AirshipService - All jobs finished, stopping with last startId: 2
+<<<<<<< Updated upstream
 HTTP/1.0 200 Connection established
 
+=======
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 c.m.a.b.c
 androidx.lifecycle.ViewModelProvider.DefaultKey:c.m.a.b.c
 4ac69499-f3c2-4f21-9a86-983b04538c46
@@ -9678,6 +9978,7 @@ O=Certona Corporation
 CN=*.res-x.com
 O=Certona Corporation,CN=*.res-x.com
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
 
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
@@ -9720,10 +10021,55 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
+
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+
+
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=APPFORYOU
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -9740,6 +10086,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -11994,6 +12358,7 @@ Using proxy: 10.0.1.69:8085
 c.riskified.com:443
 c.riskified.com:443
 CONNECT c.riskified.com:443 HTTP/1.1
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -12004,6 +12369,18 @@ Host: prodmobloy2.finishline.com
 
 HTTP/1.0 200 Connection established
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 The Finish Line\,Inc.
 O=The Finish Line\,Inc.
 www.finishline.com
@@ -12136,6 +12513,7 @@ www.finishline.com
 CN=www.finishline.com
 O=The Finish Line\,Inc.,CN=www.finishline.com
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -12174,6 +12552,46 @@ RiskifiedID: -32857659484406668401593468696423
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468696423
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468696423
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+>>>>>>> Stashed changes
 
 *.riskified.com
 CN=*.riskified.com
@@ -12216,6 +12634,7 @@ O=mitmproxy
 mitmproxy
 CN=mitmproxy
 o=mitmproxy,cn=mitmproxy
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 mitmproxy
@@ -12246,12 +12665,45 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+mitmproxy
+O=mitmproxy
+Connection: close
+mitmproxy
+CN=mitmproxy
+Content-Length: 260
+o=mitmproxy,cn=mitmproxy
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+c.riskified.com.
+*.riskified.com.
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 /client_infos.json?timezone=-480&href=https://prodmobloy2.finishline.com/api/account/guest&riskified_cookie=c4163680-e3f1-464d-8f16-48049d9e4ad2&cart_id=-32857659484406668401593468683252&shop=finishline.com&page_id=5d9ca3&lang=en_US&con_type=wifi&roaming=false&source=android_idfa
 GET /client_infos.json?timezone=-480&href=https://prodmobloy2.finishline.com/api/account/guest&riskified_cookie=c4163680-e3f1-464d-8f16-48049d9e4ad2&cart_id=-32857659484406668401593468683252&shop=finishline.com&page_id=5d9ca3&lang=en_US&con_type=wifi&roaming=false&source=android_idfa HTTP/1.1
 s:https://prodmobloy2.finishline.com/api/account/guest
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -12268,6 +12720,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -12705,6 +13175,7 @@ AHPKoxy{|}{2yiDk
 -15.66
 0.00
 0.00
+<<<<<<< Updated upstream
 CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
@@ -12714,6 +13185,17 @@ Host: www.res-x.com
 Proxying: CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
+=======
+CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+
+-10.77
+-10.77
+Proxying: CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+>>>>>>> Stashed changes
 
 8.48
 8.48
@@ -12963,12 +13445,20 @@ ou}eNX2Y2^]XL2AL
 786.68
 786.68
 730.50
+<<<<<<< Updated upstream
 HTTP/1.0 200 Connection established
+=======
+HTTP/1.0 200 Connection established
+>>>>>>> Stashed changes
 730.50
 668.92
 668.92
 601.95
+<<<<<<< Updated upstream
 
+=======
+
+>>>>>>> Stashed changes
 601.95
 526.14
 526.14
@@ -14377,7 +14867,11 @@ GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679
 5.73
 5.73
 (0.45,4.10,11.12,12.01,36.92,-6.05,-1.91,-3.27,-9.04,-0.49,0.72,-3.50,-5.13,7.90,2.94,5.73)
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
+>>>>>>> Stashed changes
 
 MR[.}DJHALMHFWPT
 MR[.}DJHALMHFWPT
@@ -14396,6 +14890,7 @@ MR[.}DJHALMHFWPT
 36.92
 36.92
 -6.05
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
 Host: www.res-x.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -14403,11 +14898,21 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Accept: */*
 
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+>>>>>>> Stashed changes
 
 -6.05
 -1.91
 -1.91
 
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
 Host: www.res-x.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -14415,6 +14920,15 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Accept: */*
 
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/men HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+>>>>>>> Stashed changes
 
 -3.27
 -3.27
@@ -14430,7 +14944,11 @@ Accept: */*
 -5.13
 7.90
 7.90
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
+=======
+HTTP/1.1 400 Bad Request
+>>>>>>> Stashed changes
 2.94
 2.94
 5.73
@@ -14438,13 +14956,22 @@ HTTP/1.1 400 Bad Request
 (0.45,4.10,11.12,12.01,36.92,-6.05,-1.91,-3.27,-9.04,-0.49,0.72,-3.50,-5.13,7.90,2.94,5.73)
 52.51
 52.51
+<<<<<<< Updated upstream
 Server: mitmproxy 5.1.1
 Connection: close
+=======
+Server: mitmproxy 5.1.1
+Connection: close
+>>>>>>> Stashed changes
 34.55
 34.55
 34.34
 34.34
+<<<<<<< Updated upstream
 Content-Length: 260
+=======
+Content-Length: 260
+>>>>>>> Stashed changes
 -41.57
 -41.57
 -46.35
@@ -14454,8 +14981,13 @@ Content-Length: 260
 4.41
 4.41
 29.81
+<<<<<<< Updated upstream
 Content-Type: text/html
 
+=======
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 29.81
 11.20
 11.20
@@ -14478,6 +15010,7 @@ HTTP/1.1 400 Bad Request
 52.51
 52.51
 34.55
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 34.55
@@ -14487,17 +15020,37 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
 
-0.00
-0.00
--41.57
-Received headers:
+34.55
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+>>>>>>> Stashed changes
+
+0.00
+0.00
+-41.57
+Received headers:
+<<<<<<< Updated upstream
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 -41.57
 -46.35
@@ -14530,6 +15083,7 @@ HTTP/1.1 400 Bad Request
 v_DAF_____A__}_
 v_DAF5_A2_}_
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -14546,6 +15100,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 -46.35
 44.63
@@ -14840,6 +15412,7 @@ Using proxy: 10.0.1.69:8085
 c.riskified.com:443
 c.riskified.com:443
 CONNECT c.riskified.com:443 HTTP/1.1
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -14850,6 +15423,18 @@ Host: prodmobloy2.finishline.com
 
 HTTP/1.0 200 Connection established
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 The Finish Line\,Inc.
 O=The Finish Line\,Inc.
 www.finishline.com
@@ -14982,6 +15567,7 @@ www.finishline.com
 CN=www.finishline.com
 O=The Finish Line\,Inc.,CN=www.finishline.com
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -15044,10 +15630,75 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468701772
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468701772
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -15064,6 +15715,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -15330,9 +15999,15 @@ Using proxy: 10.0.1.69:8085
 13.20
 0.00
 0.00
+<<<<<<< Updated upstream
 CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
+=======
+CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+>>>>>>> Stashed changes
 
 0.00
 0.00
@@ -15348,9 +16023,15 @@ gA}2gWg
 6248517155995317
 6248517155995317
 70
+<<<<<<< Updated upstream
 Proxying: CONNECT www.res-x.com:443 HTTP/1.1
 Host: www.res-x.com
 
+=======
+Proxying: CONNECT www.res-x.com:443 HTTP/1.1
+Host: www.res-x.com
+
+>>>>>>> Stashed changes
 
 13.20
 true
@@ -15608,9 +16289,15 @@ OA}4j
 
 
 -
+<<<<<<< Updated upstream
 HTTP/1.0 200 Connection established
 
 
+=======
+HTTP/1.0 200 Connection established
+
+
+>>>>>>> Stashed changes
 
 -
 1321,146.83,32.2,4.94,2;
@@ -16603,11 +17290,16 @@ CN=*.res-x.com
 O=Certona Corporation,CN=*.res-x.com
 197,0.07,0.27,0.26,0.75,-5.14,-7.78,-21.65,16.4,2.01,1;
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
+>>>>>>> Stashed changes
 
 359,-1.57,0.92,-2.06,0.68,-5.25,-8.32,26.55,11.71,1.57,2;187,-0.09,-0.23,0.16,1.13,-6.59,-6.67,53.7,15.78,1.97,1;198,-0.04,-0.01,0.08,1.28,-6.64,-6.7,1.94,8.28,0.87,1;198,0.2,0.02,0.08,1.58,-6.51,-6.87,-15.97,34.23,-2.93,1;200,0.21,0.28,-0.21,2.22,-5.92,-7.25,-27,22.25,-2.52,1;196,-0.1,0.11,-0.14,1.96,-5.8,-7.54,-9.5,-13.76,-5.05,1;196,-0.02,-0.05,-0.03,2,-5.95,-7.39,11.52,-9.59,-0.06,1;200,-0.62,-0.03,-0.02,0.84,-6,-7.66,7.12,-77.13,-8.78,1;195,-0.31,0.31,-0.69,0.48,-5.61,-8.16,-33.63,-20.83,3.25,1;197,0.07,0.27,0.26,0.75,-5.14,-7.78,-21.65,16.4,2.01,1;
 Motion Count SDCalc-Time: 8/13
 Motion SDCalc-Time: 656ms
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
 Host: www.res-x.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -16615,11 +17307,21 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Accept: */*
 
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+>>>>>>> Stashed changes
 
 do_en,dm_en,t_en
 FeistelCipherEncode-Time: 0ms
 0,4208,2974415326,29290555198,32264974732,3752,0,2,8,8,4000,860000,1,159882607995418582,1593468701727,0
 
+<<<<<<< Updated upstream
 GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
 Host: www.res-x.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -16627,6 +17329,15 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Accept: */*
 
+=======
+GET https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women HTTP/1.1
+Host: www.res-x.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+
+>>>>>>> Stashed changes
 
 2.2.2-1,2,-94,-100,-1,uaend,-1,2034,1080,1,70,1,en,9,0,ONEPLUS%20A5010,unknown,qcom,-1,com.WinnersCircle,-1,-1,60b4488c57919beb,-1,0,1,REL,1910081948,28,OnePlus,OnePlus5T,release-keys,user,OnePlus,ONEPLUS%20A5010_43_191008,msm8998,OnePlus,OnePlus5T,OnePlus/OnePlus5T/OnePlus5T:9/PKQ1.180716.001/1910081948:user/release-keys,rd-build-193,PKQ1.180716.001,24756,-2142219408,796734350863-1,2,-94,-101,do_en,dm_en,t_en-1,2,-94,-102,-1,2,-94,-108,-1,2,-94,-117,2,4144,0,0,1,1,1,-1;3,59,0,0,1,1,1,-1;-1,2,-94,-111,1321,146.83,32.2,4.94,2;188,150.16,37.22,7.07,1;197,147.47,39.29,8.37,1;198,157.22,38.81,11.82,1;200,159.73,36.97,14.06,1;196,156.96,36.22,13.32,1;196,154.28,37.39,12.84,1;207,144.78,38.21,6.18,1;189,148.64,34.85,3.71,1;197,151.72,32.74,5.16,1;-1,2,-94,-109,359,-1.57,0.92,-2.06,0.68,-5.25,-8.32,26.55,11.71,1.57,2;187,-0.09,-0.23,0.16,1.13,-6.59,-6.67,53.7,15.78,1.97,1;198,-0.04,-0.01,0.08,1.28,-6.64,-6.7,1.94,8.28,0.87,1;198,0.2,0.02,0.08,1.58,-6.51,-6.87,-15.97,34.23,-2.93,1;200,0.21,0.28,-0.21,2.22,-5.92,-7.25,-27,22.25,-2.52,1;196,-0.1,0.11,-0.14,1.96,-5.8,-7.54,-9.5,-13.76,-5.05,1;196,-0.02,-0.05,-0.03,2,-5.95,-7.39,11.52,-9.59,-0.06,1;200,-0.62,-0.03,-0.02,0.84,-6,-7.66,7.12,-77.13,-8.78,1;195,-0.31,0.31,-0.69,0.48,-5.61,-8.16,-33.63,-20.83,3.25,1;197,0.07,0.27,0.26,0.75,-5.14,-7.78,-21.65,16.4,2.01,1;-1,2,-94,-144,2;188.00;1321.00;3913769095;}6AB-1,2,-94,-142,2;144.78;159.73;309945698;IVKr}qgA:2;32.20;39.29;2055410686;Ak}xibls:2;4.94;14.06;609019442;ANWn}xtI-1,2,-94,-145,2;187.00;359.00;1296882469;}A2DE2DE-1,2,-94,-143,2;-1.57;0.21;4054746627;Art|}rua:2;-0.23;0.92;3086894128;}ALN[RJK:2;-2.06;0.16;1036225097;A}z{stwx:2;0.68;2.22;3560536090;ARXd}stG:2;-6.64;-5.25;3090524422;}CAF`d^.:2;-8.32;-6.67;3667176544;A}{ug]bY:2;-27.00;53.70;3114270783;h}VIAN]Z:2;-77.13;34.23;4052121955;pso}vceA:2;-8.78;1.97;3628064508;z}vacUqA-1,2,-94,-115,0,4208,2974415326,29290555198,32264974732,3752,0,2,8,8,4000,860000,1,159882607995418582,1593468701727,0-1,2,-94,-106,-1,0-1,2,-94,-120,-1,2,-94,-112,15,285,59,840,140100,1409,95100,950,10658-1,2,-94,-103,
 Plain-BuildSensorData-Time: 863ms
@@ -16637,6 +17348,7 @@ AES//PKCS5Padding
 AES/CBC/PKCS5Padding
 AES/CBC
 AES//PKCS5Padding
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 aes-128-cbc
@@ -16666,11 +17378,43 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+aes-128-cbc
+Connection: close
+1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=
+6000,1000,0
+Content-Length: 260
+1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$6000,1000,0
+Cipher-BuildSensorData-Time: 12ms
+Content-Type: text/html
+sensor=4
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://www.res-x.com/ws/r2/resonance.aspx?appid=FinishLine03&trackingid=679751873505102&sessionid=-3285765948440666840&customerid=&url=/winnerscircledp/shop/women
 unregisterListenerImpl sensorName:BMI160 Gyroscope,isWakeUpSensor:false,callingApp: com.WinnersCircle,callingPid:20514,callingUid:10119
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -16687,6 +17431,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 sensor=1
 unregisterListenerImpl sensorName:BMI160 Accelerometer,isWakeUpSensor:false,callingApp: com.WinnersCircle,callingPid:20514,callingUid:10119
@@ -16783,6 +17545,7 @@ b34b1590e3fa73b12c5bbf7d542444b2.0
 prodmobloy2.finishline.com
 https//prodmobloy2.finishline.com:443?proxy=10.0.1.69:8085
 Using proxy: 10.0.1.69:8085
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -16793,6 +17556,18 @@ Host: prodmobloy2.finishline.com
 
 HTTP/1.0 200 Connection established
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 The Finish Line\,Inc.
 O=The Finish Line\,Inc.
 www.finishline.com
@@ -16937,6 +17712,7 @@ GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 74d17e43.0
 /system/etc/security/cacerts/74d17e43.0
 mitmproxy
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -16956,12 +17732,34 @@ RiskifiedID: -32857659484406668401593468705564
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$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$6000,1000,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468705564
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+>>>>>>> Stashed changes
 
 O=mitmproxy
 mitmproxy
 CN=mitmproxy
 o=mitmproxy,cn=mitmproxy
 
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 Host: prodmobloy2.finishline.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -16979,6 +17777,25 @@ RiskifiedID: -32857659484406668401593468705564
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,Xb+jFKmRVzM0dcQ8kx0sthcZWD7Ho0d56411HImnbkg7Ea8DEZ4WpDClZxJQoiWCctKHXEa4LPz7e5pgckbJY6y9Lt4PM6hQnpStt+zo9whiF10zPt33S8AHfu4VALA7UmsoSvkH987X0/bfjFk919D9mdUZDU3FIMAX5Z+b3PA=,JXgd0aaUGWOBAss/a1TKurW2lMKcf/ta1fbJZeHqYr7+0cNEaoBTR97rn9w8rEeReLcTTRZVSQiBWyorPiQqdxFKZhOoZ4rF9GYolIMcl4UVlciVTBz8PShrBBiaRDOwwouaGtGRO+QYOUDOQHF94MFn9f2vTjcXsfchE6XRPTQ=$cJrM5wlJ8+FHow6w7xJvKLAX82v3uZjPUz8bG0bkSDkmlM9hnl8R2lXWb4uk7XgIKdoUKN0zfeS6CtxV8kNSX8gqFb7TEQ8QHdJZk2RjGlp01C4h6ahdjujBfJKJAlPYTYlZPzi3RCgwWf8BDQ3zn69S2VrZXAW/fbByBfI21ZWKFAJJMWqguQBh254tR4svPLHDrAm6EXUyB+mCydf1h1VjFcZSgU3cFiBcesWd865bNMD8KI1sWdihMnTwvR4hLG92FotZhXYtJDiH1TMxMCfwCsr8pWiLNBXjgxOi4I544ma73WkLPG3VTCj9737donbo7iaKVtoQTHQL6brk5YRl8Z5+5NvTKnKNzPebSs4OW/4T9GW4UOaydC1gzkHM78eX/l6LL6RgAlS1AgcTQ/ofGjft3RKUEL2GG4QvjH1Jc1CzFP+xRsQjdfJsoqNVNdJhQQ4rK9rVpyiGWDEx5oW6mpOzxSls8v7piAG2cxMstzw/I+kpI6GtrzzfjA7+n5qzof9vna2/wnOUE/i1VNopjXGK156/YDVyTN2x/0BmA8LObGTAwx3s7nG9icg1MAgsGvHhLGUPz5jZN+bRpQl9ZtIDPRTGjAof6/7OOFROwbAVhIVeZpt5/1g1D8lOoGg99FZSkxauOJqJ4vlLtmQOu02hDnCIV7f3IvjGdiFtgt2WmRDV0ccTmJ1gKb+xAIHPMYsNqH1nbr84dz8zUzGDHDO5thQjzyMmq0bYgLKy09uNNwhB70W7xurF4oEuOwz53f8j4bwTzyCREUjABJIxcFzX7YVIazW8pv7m0ARHvVnAtRNrXb/DulUbSwpIIu6MAucapyqsFgwsq+AUZ5tEP4mwLCk4OY11Rx5f/vAyLbV6PeKdTptz9s9YFT2DIonCc1HzOM39ocrQl4quVpoE4b1XxLyEnup7rJcVZoKWInuuvr90u/X/zTDD7lnfX3wbSpoOQAAnLppyfhd1hYVJTX9g7cutZwfICqMs+FNKWXapfsyCdDj8clzXorY0J5i41z1w1MW8n4LXdisX8bRYGoSmeHuEghjRk5eawFkL/OHNs5eZZSK2Rs5a74z7KQMcN8TDP+AwFFglMXsu9nBTp+kEExv4I9NOq7bu2VE/tEyfgylrt6y0qQltmUU+AGpcDWrtNLsC1OSh58OvD6SB4juH8X8QJDG2pgne7dzi52BUa4TkdRAvndw+uafhLX4gpF1/+dqFEHQNhfZOaBvdMvFV/ysrbhPiKfcuVFTK1ZI2V7Wj0rxDqDx6ZEmcPTlcuK2TkhOJexCsTMcsex1p9lIW+zxu6VL9+q2Oath+CV1vhTQ2gFXg2L3G0lBknNWY5nAGN/x0udz+dCOcglePF/X5IOMb30WK1oc3lX2cToXh1A6OjXuJDt+Gz9fMiiNgyA4EJMCGg30lVWFUp4kSLlFK+keUltL61Wh+jUjeAvtWcoaKJwmVkdLX0VDwdGnLUmD7QF+VNp3DiX1/nwsDVY0PHGeayCYzeLNgAqeXJ/9+vuSkuSzSCcmMDnf0l78zhB0dNpB3/RoyhVhbZ7Sn+Aow5455GQwIrqtsClJDNqDT+R7cSLyilnOSnKRA9vuYvd/rNhqqecVaU6h5ynN3UC2wXktGmHctGbgujzjfgVqk0Ra25Oi1UWxpnabzc0ocZHAgZeFl/1xmtwq098poMqKvUQSY8MWzIntjq2OkAiyzv5NpJRREFAvgq9XCTP8G6AQ987Esl5jq9ayQ71u1tmjj8VK+QJJYgiVbjuH+N8DcKlVVnf8w2BkhxgJpV6kOS87JxARYjg0pn6/StH7g7eqZiQvH4hXvmKMBV1s8B96NX+j1Hyp4NQBw0n1wT2G5ShXTw1diEVkhJg276TADGD0QzflU/EtnDGUWyMHmT/N5OjbehNPqjAeztQoJdU4Dj0rEjFYa20ENpWJeyxqUa95Wxwd8dd9YnsLDURvWAf1IRivS7/dFkhqqaA/NXAWGinluira25CJm27rGn6QAc1lE6RoqB1g/AevQ4VqLhA6nb3nu7mbV34CEmT5wW4PHwFaGxCoP1rK9JZbN6ABaTpuDH2CpmbcrNpYNe8+wrNUqE6FXDCwfNHEQVClytRx/Nh7K3UoW10PTsDhh5WeTrMd7Zv82cqOZQDSGZkvBUPSBH19EEvIfY4ImhEdGP4EndkQrlyyA0aaP2mEROm1f578PLUBY0mYLsijl2evU0FPZdxJmVUSolpmX8gT1Brx3efKhHgO41Uj8iomydCc6tmU7DEouXvnPvqFGBrzQ5+NPxtFN1tRizoSAOxxr2+vPBAZMJ+xRvQCe1t7DQiEI0wCTsSBqUR/Bz3g/wWL3TSgbGEin6Xhq6J6sulnP0DS46y3KoymytyPrflT30coxSNStHCkh5ZEDgk1g2too0RykEjtb2iBFoAo/9jOBxLJ7hKPQX8E8cJJBljefxiWT8aGSx/ocgdFumAu9U9iV2RKyk4U7HPseOjWhV9kpc0jzSzw6J0/bG+WuIfcoh47xNnj/txQMeNzMtWDBmHM8zB2yL5lAoF0ZdSRlXhoSatTCko9lOv8lVRUUtEzd0aMe0+Xwa/aXB/T7VqnBC2hXCcPul29GQyjL5IP9C16aeu+0H+X2bVyMBC3yIo0uatqmB3vlXHtzZS1oEt1dVdey+ZqvZnqzx55ZRJ44qzVPs//tnn5PiVdOM2n8WJOwQmN0pksDlaJuJzPQKuOPidsRpwhMu+s3WTesevRCoie3fLv7g85xmxE6igT6EI72XyorH+KZsGmWFBT90mqvhLAGqwqQdI8iItJEmgmNDvGNlr5EfDkXIYwn5EFt30sFgA==$6000,1000,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468705564
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+>>>>>>> Stashed changes
 
 mitmproxy
 O=mitmproxy
@@ -17019,6 +17836,7 @@ A resource failed to call end.
 A resource failed to call end. 
 A resource failed to call end. 
 A resource failed to call end. 
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
 Connection: close
@@ -17042,6 +17860,31 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 java.net.CookieManager.level
@@ -17059,6 +17902,7 @@ java.net.handlers
 java.net.CookieManager.handlers
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -17075,6 +17919,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>

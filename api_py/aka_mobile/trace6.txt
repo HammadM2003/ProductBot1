@@ -2130,6 +2130,7 @@ Using loader: com.koushikdutta.ion.f.j@4f037e6
 ion-cookies.xml
 /data/user/0/com.WinnersCircle/shared_prefs/ion-cookies.xml
 /data/user/0/com.WinnersCircle/shared_prefs/ion-cookies.xml.bak
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
 Set-Cookie: akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63; path=/
@@ -2139,6 +2140,17 @@ HTTP/1.1 200 OK
 Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
 Set-Cookie: akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63; path=/
 
+=======
+HTTP/1.1 200 OK
+Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
+Set-Cookie: akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63; path=/
+
+    
+HTTP/1.1 200 OK
+Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
+Set-Cookie: akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63; path=/
+
+>>>>>>> Stashed changes
     
 s:https://prodmobloy2.finishline.com
 directory "."
@@ -3381,6 +3393,7 @@ StringBuilder.append(CONNECT )
 StringBuilder.append(prodmobloy2.finishline.com)
 StringBuilder.append(:)
 StringBuilder.append(443)
+<<<<<<< Updated upstream
 StringBuilder.append( HTTP/1.1
 Host: )
 StringBuilder.append(prodmobloy2.finishline.com)
@@ -3394,15 +3407,36 @@ Host: prodmobloy2.finishline.com
 Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
+=======
+StringBuilder.append( HTTP/1.1
+Host: )
+StringBuilder.append(prodmobloy2.finishline.com)
+StringBuilder.append(
+
+)
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+>>>>>>> Stashed changes
 
 ro.dalvik.vm.isa.arm64
 en-US
 com.WinnersCircle.apk
 color.com.WinnersCircle.apk
 /data/theme/com.WinnersCircle.apk
+<<<<<<< Updated upstream
 HTTP/1.1 200 Connection established
 /data/theme/color/color.com.WinnersCircle.apk
 
+=======
+HTTP/1.1 200 Connection established
+/data/theme/color/color.com.WinnersCircle.apk
+
+>>>>>>> Stashed changes
 com.android.chrome.apk
 color.com.android.chrome.apk
 -7
@@ -3947,6 +3981,7 @@ StringBuilder.append( )
 StringBuilder.append(https://prodmobloy2.finishline.com/api/config)
 StringBuilder.append( HTTP/1.1)
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
@@ -3985,6 +4020,46 @@ Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ
 AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
 Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63
 
+=======
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.1 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: xiEnHaYlEtsIcaSdVbOs4bdIWnYZa16t8S--zJapXa_Ak5CLKpe7!438837156
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: 4035863634191510524
+Content-Length: 0
+RiskifiedID: 40358636341915105241589794168253
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
+Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63
+
+
+
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.1 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: xiEnHaYlEtsIcaSdVbOs4bdIWnYZa16t8S--zJapXa_Ak5CLKpe7!438837156
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: 4035863634191510524
+Content-Length: 0
+RiskifiedID: 40358636341915105241589794168253
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
+Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794454~id=2784669527bf8d7b43bab2051e9d3f63
+
+>>>>>>> Stashed changes
 
 zip file "/data/app/com.android.chrome-IPVMIvuZ4rc6xdgndG0lcw==/base.apk"
 zip file "/data/app/com.android.chrome-IPVMIvuZ4rc6xdgndG0lcw==/split_autofill_assistant.apk"
@@ -4046,8 +4121,13 @@ java.lang.reflect.Method.invoke(Native Method)
 com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:537)
 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:537)
 com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
+=======
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+>>>>>>> Stashed changes
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
 
 Backtrace:
@@ -4064,13 +4144,20 @@ java.lang.Exception
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
 
 StringBuilder(Motion sensor changed elapsed time: )
+<<<<<<< Updated upstream
 Server: Kestrel
 api-supported-versions: 2.0, 3.0
 X-Powered-By: ASP.NET
+=======
+Server: Kestrel
+api-supported-versions: 2.0, 3.0
+X-Powered-By: ASP.NET
+>>>>>>> Stashed changes
 java.lang.StringBuilder.<init>(Native Method)
 	at java.lang.StringBuilder.<init>(Native Method)
 com.akamai.botman.D.onSensorChanged(SourceFile:6)
 	at com.akamai.botman.D.onSensorChanged(SourceFile:6)
+<<<<<<< Updated upstream
 Content-Length: 125
 android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
 	at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
@@ -4088,10 +4175,30 @@ android.app.ActivityThread.main(ActivityThread.java:6863)
 Connection: keep-alive
 	at android.app.ActivityThread.main(ActivityThread.java:6863)
 
+=======
+Content-Length: 125
+android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
+	at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
+Cache-Control: max-age=3600
+android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+Expires: Mon, 18 May 2020 10:29:26 GMT
+android.os.MessageQueue.next(MessageQueue.java:326)
+	at android.os.MessageQueue.next(MessageQueue.java:326)
+Date: Mon, 18 May 2020 09:29:26 GMT
+android.os.Looper.loop(Looper.java:160)
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
+	at android.os.Looper.loop(Looper.java:160)
+android.app.ActivityThread.main(ActivityThread.java:6863)
+Connection: keep-alive
+	at android.app.ActivityThread.main(ActivityThread.java:6863)
+
+>>>>>>> Stashed changes
 java.lang.reflect.Method.invoke(Native Method)
 	at java.lang.reflect.Method.invoke(Native Method)
 HTTP/1.1 200 OK
 com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:537)
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 
 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:537)
@@ -4108,6 +4215,24 @@ Date: Mon, 18 May 2020 09:29:26 GMT
 Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
 Connection: keep-alive
 
+=======
+HTTP/1.1 200 OK
+
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:537)
+com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+api-supported-versions: 2.0, 3.0
+X-Powered-By: ASP.NET
+Content-Length: 125
+Cache-Control: max-age=3600
+Expires: Mon, 18 May 2020 10:29:26 GMT
+Date: Mon, 18 May 2020 09:29:26 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+>>>>>>> Stashed changes
 
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
 
@@ -4126,6 +4251,7 @@ java.lang.Exception
 
 StringBuilder(Motion sensor changed elapsed time: )
 Received headers:
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Server: Kestrel
@@ -4138,6 +4264,20 @@ Date: Mon, 18 May 2020 09:29:26 GMT
 Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
 Connection: keep-alive
 
+=======
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+api-supported-versions: 2.0, 3.0
+X-Powered-By: ASP.NET
+Content-Length: 125
+Cache-Control: max-age=3600
+Expires: Mon, 18 May 2020 10:29:26 GMT
+Date: Mon, 18 May 2020 09:29:26 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/config
 java.lang.StringBuilder.<init>(Native Method)
@@ -4155,6 +4295,7 @@ android.os.MessageQueue.nativePollOnce(Native Method)
 https://prodmobloy2.finishline.com
 android.os.MessageQueue.next(MessageQueue.java:326)
 	at android.os.MessageQueue.next(MessageQueue.java:326)
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 
 android.os.Looper.loop(Looper.java:160)
@@ -4162,6 +4303,15 @@ HTTP/1.1 200 OK
 Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
 Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; path=/
 
+=======
+HTTP/1.1 200 OK
+
+android.os.Looper.loop(Looper.java:160)
+HTTP/1.1 200 OK
+Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; path=/
+
+>>>>>>> Stashed changes
 
 feature-adaptive-playback
 	at android.os.Looper.loop(Looper.java:160)
@@ -4337,11 +4487,16 @@ HTTP/1.1 200 OK
 	at com.akamai.botman.D.onSensorChanged(SourceFile:6)
 feature-adaptive-playback
 android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
+=======
+HTTP/1.1 200 OK
+>>>>>>> Stashed changes
 
 feature-secure-playback
 	at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
 feature-tunneled-playback
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Server: Kestrel
@@ -4369,6 +4524,35 @@ Date: Mon, 18 May 2020 09:29:26 GMT
 Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
 Connection: keep-alive
 
+=======
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+api-supported-versions: 2.0, 3.0
+X-Powered-By: ASP.NET
+Content-Length: 125
+Cache-Control: max-age=3600
+Expires: Mon, 18 May 2020 10:29:26 GMT
+Date: Mon, 18 May 2020 09:29:26 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+
+android.os.MessageQueue.nativePollOnce(Native Method)
+Final (post cache response) headers:
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+api-supported-versions: 2.0, 3.0
+X-Powered-By: ASP.NET
+Content-Length: 125
+Cache-Control: max-age=3600
+Expires: Mon, 18 May 2020 10:29:26 GMT
+Date: Mon, 18 May 2020 09:29:26 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+>>>>>>> Stashed changes
 
 feature-partial-frame
 	at android.os.MessageQueue.nativePollOnce(Native Method)
@@ -14306,6 +14490,7 @@ StringBuilder.append( )
 StringBuilder.append(https://prodmobloy2.finishline.com/api/account/guest)
 StringBuilder.append( HTTP/1.1)
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -14346,6 +14531,48 @@ Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ
 AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
 Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.1 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,hi+osgK+zjsbIcraJWov4AShNWnOTePK24rHPLYWsyvwuWiqYIoMACbwAwFgK9MRjD6NNVcD44XatR4KY9AF4/qxBhnC0BHZwgaZ1LvF/ofdD655pb6UqzFN86jofM62RDAeh2FL9hSelj9Sub2VsN6YJWnDSfHALDn4Cnliew0=,HCouX0YfOHiMIUE2dmCSXSF/SRXJnlAUyqHpwgD8+IUX1hkpCc36oTs/rSq1qXRIbz/gQPsCTQcMwn8VdCII6rpRr0OU0j9A9lc4q3M0CvHwXRKsngA3cvGMBJR6G4io6+/iI34DFud+saJKoG3NCrBPoRnsoiMzVf7il5oCmbQ=$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$4000,0,1000
+X-Api-Version: 3.0
+x-cookie: xiEnHaYlEtsIcaSdVbOs4bdIWnYZa16t8S--zJapXa_Ak5CLKpe7!438837156
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: 4035863634191510524
+Content-Length: 0
+RiskifiedID: 40358636341915105241589794173308
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
+Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.1 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,hi+osgK+zjsbIcraJWov4AShNWnOTePK24rHPLYWsyvwuWiqYIoMACbwAwFgK9MRjD6NNVcD44XatR4KY9AF4/qxBhnC0BHZwgaZ1LvF/ofdD655pb6UqzFN86jofM62RDAeh2FL9hSelj9Sub2VsN6YJWnDSfHALDn4Cnliew0=,HCouX0YfOHiMIUE2dmCSXSF/SRXJnlAUyqHpwgD8+IUX1hkpCc36oTs/rSq1qXRIbz/gQPsCTQcMwn8VdCII6rpRr0OU0j9A9lc4q3M0CvHwXRKsngA3cvGMBJR6G4io6+/iI34DFud+saJKoG3NCrBPoRnsoiMzVf7il5oCmbQ=$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$4000,0,1000
+X-Api-Version: 3.0
+x-cookie: xiEnHaYlEtsIcaSdVbOs4bdIWnYZa16t8S--zJapXa_Ak5CLKpe7!438837156
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: 4035863634191510524
+Content-Length: 0
+RiskifiedID: 40358636341915105241589794173308
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A6010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1589795054~op=prod_aka_finishline_com:prod_Green|~rv=65~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=0daff9b4db2b563fa8df7bb97f8d4696
+Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; akavpau_FL-MobApp=1589794466~id=e17a84a38f677dad41ba521c9d66602f
+
+>>>>>>> Stashed changes
 
 *.branch.io
 CN=*.branch.io
@@ -14630,6 +14857,7 @@ java.lang.Exception
 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
 
 StringBuilder(Orientation sensor changed elapsed time: )
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Server: Kestrel
@@ -14677,18 +14905,76 @@ Date: Mon, 18 May 2020 09:29:30 GMT
 Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
 Connection: keep-alive
 
+=======
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+X-Session: 2012874264629498268
+X-Session-Expires-At: 1589794950
+X-Cookie: aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408
+X-OCEnvironment: weblogic_instance:prod_store33 sessionId:aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408!1589794170633 DB Driver Version:disabled
+AkamaiCookie: akaalb_prod-finishline=1589795070~op=prod_aka_finishline_com:prod_Blue|~rv=70~m=prod_Blue:0|~os=9985b765e94777655df09359a5a46bbc~id=20161608a0e30a7724864be702f8878f
+api-supported-versions: 2.0, 3.0
+Content-Length: 4
+Date: Mon, 18 May 2020 09:29:30 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+X-Session: 2012874264629498268
+X-Session-Expires-At: 1589794950
+X-Cookie: aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408
+X-OCEnvironment: weblogic_instance:prod_store33 sessionId:aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408!1589794170633 DB Driver Version:disabled
+AkamaiCookie: akaalb_prod-finishline=1589795070~op=prod_aka_finishline_com:prod_Blue|~rv=70~m=prod_Blue:0|~os=9985b765e94777655df09359a5a46bbc~id=20161608a0e30a7724864be702f8878f
+api-supported-versions: 2.0, 3.0
+Content-Length: 4
+Date: Mon, 18 May 2020 09:29:30 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+
+Received headers:
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+X-Session: 2012874264629498268
+X-Session-Expires-At: 1589794950
+X-Cookie: aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408
+X-OCEnvironment: weblogic_instance:prod_store33 sessionId:aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408!1589794170633 DB Driver Version:disabled
+AkamaiCookie: akaalb_prod-finishline=1589795070~op=prod_aka_finishline_com:prod_Blue|~rv=70~m=prod_Blue:0|~os=9985b765e94777655df09359a5a46bbc~id=20161608a0e30a7724864be702f8878f
+api-supported-versions: 2.0, 3.0
+Content-Length: 4
+Date: Mon, 18 May 2020 09:29:30 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 /api/account/guest/
 ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
 akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; path=/
 https://prodmobloy2.finishline.com
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 
 HTTP/1.1 200 OK
 Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
 Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; path=/
 
+=======
+HTTP/1.1 200 OK
+
+HTTP/1.1 200 OK
+Set-Cookie: ak_bmsc=997E2AEBCAF9A929F9BC2AE3558B23E7C7EFB735C05100008D4FC25EAD91C34A~pl8gvLpBQ60dyCCS1JhpqvMwjyZ7w9F0Mq2nJbw+EtOr0PPglc3Ep3lw38K1QNpoRsYD6VFLHm1x0Xx4pZmc3nM7C4DneSwmjTbvu8UumrqQBZnaqvEi7ZdOGofhfP8T/SNfg9V/QQXsoPFJzPxyZ1K7MkhzmKO7ua/g8xmngkIVWChH4DvW4Fsvfmmh/Zv8dM23ZNoFLW5bNDaCGRR5n7GG5OA3sR6U+Y+nRAs8X1eJE=; path=/
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; path=/
+
+>>>>>>> Stashed changes
 
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 
@@ -14743,6 +15029,7 @@ HTTP/1.1 200 OK
 	at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:926)
 android.os.MessageQueue.nativePollOnce(Native Method)
 	at android.os.MessageQueue.nativePollOnce(Native Method)
+<<<<<<< Updated upstream
 HTTP/1.1 200 OK
 
 android.os.MessageQueue.next(MessageQueue.java:326)
@@ -14777,6 +15064,42 @@ Date: Mon, 18 May 2020 09:29:30 GMT
 Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
 Connection: keep-alive
 
+=======
+HTTP/1.1 200 OK
+
+android.os.MessageQueue.next(MessageQueue.java:326)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+X-Session: 2012874264629498268
+X-Session-Expires-At: 1589794950
+X-Cookie: aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408
+X-OCEnvironment: weblogic_instance:prod_store33 sessionId:aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408!1589794170633 DB Driver Version:disabled
+AkamaiCookie: akaalb_prod-finishline=1589795070~op=prod_aka_finishline_com:prod_Blue|~rv=70~m=prod_Blue:0|~os=9985b765e94777655df09359a5a46bbc~id=20161608a0e30a7724864be702f8878f
+api-supported-versions: 2.0, 3.0
+Content-Length: 4
+Date: Mon, 18 May 2020 09:29:30 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+
+	at android.os.MessageQueue.next(MessageQueue.java:326)
+Final (post cache response) headers:
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Server: Kestrel
+X-Session: 2012874264629498268
+X-Session-Expires-At: 1589794950
+X-Cookie: aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408
+X-OCEnvironment: weblogic_instance:prod_store33 sessionId:aeAnHebT4VaeehRlVYYkqal2VQakRx8dSO6qwFwPZTqcBK4iTa7m!-1848742408!1589794170633 DB Driver Version:disabled
+AkamaiCookie: akaalb_prod-finishline=1589795070~op=prod_aka_finishline_com:prod_Blue|~rv=70~m=prod_Blue:0|~os=9985b765e94777655df09359a5a46bbc~id=20161608a0e30a7724864be702f8878f
+api-supported-versions: 2.0, 3.0
+Content-Length: 4
+Date: Mon, 18 May 2020 09:29:30 GMT
+Set-Cookie: akavpau_FL-MobApp=1589794470~id=0e8b36eb41d89242a3185464a4585686; Path=/; Secure; SameSite=None
+Connection: keep-alive
+
+>>>>>>> Stashed changes
 
 android.os.Looper.loop(Looper.java:160)
 	at android.os.Looper.loop(Looper.java:160)

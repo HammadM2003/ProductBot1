@@ -45,8 +45,13 @@ zip file "/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/base.apk"
 [/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/lib/arm64, /system/lib64]
 DexPathList[[zip file "/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/base.apk"],nativeLibraryDirectories=[/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/lib/arm64, /system/lib64]]
 Didn't find class "androidx.webkit.WebViewClientCompat" on path: DexPathList[[zip file "/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/base.apk"],nativeLibraryDirectories=[/data/app/com.WinnersCircle-FMPoRdPL49SOGI_neaFnGA==/lib/arm64, /system/lib64]]
+<<<<<<< Updated upstream
 HTTP/1.0 200 Connection established
 
+=======
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 android.webkit.WebView{2f5e808 VFEDHVC.. ......I. 0,0-0,0}
 WebView android.webkit.WebView{2f5e808 VFEDHVC.. ......I. 0,0-0,0} created and cookies enabled
 &timestamp_unix=1593468652
@@ -760,6 +765,7 @@ mitmproxy
 mitmproxy
 CN=mitmproxy
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
 
 O=mitmproxy
@@ -779,12 +785,10 @@ RiskifiedID: -32857659484406668401593468652686
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+=======
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
 
-o=mitmproxy,cn=mitmproxy
-mitmproxy
-Urban Airship\, Inc.
-CN=mitmproxy
-
+O=mitmproxy
 GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
 Host: prodmobloy2.finishline.com
 User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
@@ -801,6 +805,48 @@ RiskifiedID: -32857659484406668401593468652686
 Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
 AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
 
+>>>>>>> Stashed changes
+
+o=mitmproxy,cn=mitmproxy
+mitmproxy
+Urban Airship\, Inc.
+CN=mitmproxy
+
+<<<<<<< Updated upstream
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468652686
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+=======
+GET https://prodmobloy2.finishline.com/api/config HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468652686
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+>>>>>>> Stashed changes
 
 O=Urban Airship\, Inc.
 o=mitmproxy,cn=mitmproxy
@@ -814,21 +860,37 @@ o=urban airship\, inc.,cn=*.urbanairship.com
 mitmproxy
 c8750f0d.0
 O=mitmproxy
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 Server: mitmproxy 5.1.1
+=======
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+>>>>>>> Stashed changes
 /data/misc/user/0/cacerts-removed/c8750f0d.0
 mitmproxy
 CN=mitmproxy
 o=mitmproxy,cn=mitmproxy
+<<<<<<< Updated upstream
 Connection: close
+=======
+Connection: close
+>>>>>>> Stashed changes
 mitmproxy
 mitmproxy
 O=mitmproxy
 O=mitmproxy
+<<<<<<< Updated upstream
 Content-Length: 260
 Content-Type: text/html
 mitmproxy
 
+=======
+Content-Length: 260
+Content-Type: text/html
+mitmproxy
+
+>>>>>>> Stashed changes
 mitmproxy
 CN=mitmproxy
 o=mitmproxy,cn=mitmproxy
@@ -838,6 +900,7 @@ mitmproxy
 HTTP/1.1 400 Bad Request
 O=mitmproxy
 mitmproxy
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -855,6 +918,25 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+mitmproxy
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 CN=mitmproxy
 o=mitmproxy,cn=mitmproxy
@@ -1003,6 +1085,7 @@ java.net.handlers
 java.net.CookieManager.handlers
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -1019,6 +1102,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>
@@ -2256,6 +2357,7 @@ GoogleApiClient is not configured to use SafetyNet.API required for this call.
 cdn.branch.io:443
 cdn.branch.io:443
 CONNECT cdn.branch.io:443 HTTP/1.1
+<<<<<<< Updated upstream
 CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
 Host: prodmobloy2.finishline.com
 
@@ -2266,6 +2368,18 @@ Host: prodmobloy2.finishline.com
 
 HTTP/1.0 200 Connection established
 
+=======
+CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+Proxying: CONNECT prodmobloy2.finishline.com:443 HTTP/1.1
+Host: prodmobloy2.finishline.com
+
+
+HTTP/1.0 200 Connection established
+
+>>>>>>> Stashed changes
 [5, 4, 3, 15]
 GoogleApiClient is not configured to use SafetyNet.API required for this call.
 [5, 4, 3, 15]
@@ -2417,6 +2531,7 @@ www.finishline.com
 CN=www.finishline.com
 O=The Finish Line\,Inc.,CN=www.finishline.com
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+<<<<<<< Updated upstream
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
 
 GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
@@ -2479,10 +2594,75 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,K7MIbwiB9NOJ69qEG6kAfvpbV4c+pFRa2/GGdurWKng+JWtX3udiYfXUcrd3RzenxShsZ9vPdpcIcO2F6OH880wJj9quenqS6u+YFA/33sKS9pzib6AExPzv7CNVAZibqFjNTDrl6xzmPHnq/HTezxSzAMwTq4BQ2Nu2mcsUSu4=,KVFfhOoXtOXctlMN8vS33IrLM6o26Rtp2CILD3j0m0e60PNK6ENDb4Cd/I4OhYbswGHdYP1LWX8pJSg0dnPoOHSYcksBYjSCxtf4PXEbWHU1BqKnWy/wMxU+b44wnZFN1ylpMReGjt60s+XQDCc59r0X/DQCoxi8Nq7PVRUncvc=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468654584
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+
+GET https://prodmobloy2.finishline.com/api/account/guest HTTP/1.1
+Host: prodmobloy2.finishline.com
+User-Agent: Finish Line/2.6.2 (Android 9; Build/PKQ1.180716.001)
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Accept: */*
+X-acf-sensor-data: 1,a,K7MIbwiB9NOJ69qEG6kAfvpbV4c+pFRa2/GGdurWKng+JWtX3udiYfXUcrd3RzenxShsZ9vPdpcIcO2F6OH880wJj9quenqS6u+YFA/33sKS9pzib6AExPzv7CNVAZibqFjNTDrl6xzmPHnq/HTezxSzAMwTq4BQ2Nu2mcsUSu4=,KVFfhOoXtOXctlMN8vS33IrLM6o26Rtp2CILD3j0m0e60PNK6ENDb4Cd/I4OhYbswGHdYP1LWX8pJSg0dnPoOHSYcksBYjSCxtf4PXEbWHU1BqKnWy/wMxU+b44wnZFN1ylpMReGjt60s+XQDCc59r0X/DQCoxi8Nq7PVRUncvc=$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$4000,0,0
+X-Api-Version: 3.0
+x-cookie: UUzK_VwZoBiaAAMYlcfr6zGNc_gWKvzHCBRuISmQ15fTCeNY8f6H!1254277295
+welove: maltliquor
+Content-Type: application/json; charset=utf-8
+x-session: -3285765948440666840
+Content-Length: 0
+RiskifiedID: -32857659484406668401593468654584
+Riskified-User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001)
+AkamaiCookie: akaalb_prod-finishline=1592544401~op=prod_aka_finishline_com:prod_Green|~rv=34~m=prod_Green:0|~os=9985b765e94777655df09359a5a46bbc~id=32350920e33e42b5386b8f69c8b0b86e
+
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Received headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 s:https://prodmobloy2.finishline.com/api/account/guest
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
+<<<<<<< Updated upstream
 HTTP/1.1 400 Bad Request
 
 HTTP/1.1 400 Bad Request
@@ -2499,6 +2679,24 @@ Connection: close
 Content-Length: 260
 Content-Type: text/html
 
+=======
+HTTP/1.1 400 Bad Request
+
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+
+Final (post cache response) headers:
+HTTP/1.1 400 Bad Request
+Server: mitmproxy 5.1.1
+Connection: close
+Content-Length: 260
+Content-Type: text/html
+
+>>>>>>> Stashed changes
 
 <html>
             <head>

@@ -128,12 +128,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * iq.ts - Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * iq.ts - Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var constants = __webpack_require__(1);
@@ -170,12 +179,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * constants.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * constants.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var bt709 = __webpack_require__(2);
@@ -187,6 +205,7 @@ export function dew() {
 
       /***/
       function (module, exports) {
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
@@ -198,6 +217,19 @@ export function dew() {
         /**
          * sRGB (based on ITU-R Recommendation BT.709)
          * http://en.wikipedia.org/wiki/SRGB
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * constants.ts - part of Image Quantization Library
+         */
+        "use strict";
+        /**
+         * sRGB (based on ITU-R Recommendation BT.709)
+         * http://en.wikipedia.org/wiki/SRGB
+>>>>>>> Stashed changes
          */
 
         var Y;
@@ -237,12 +269,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * iq.ts - Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * iq.ts - Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var rgb2xyz_1 = __webpack_require__(4);
@@ -279,12 +320,21 @@ export function dew() {
       /***/
       function (module, exports) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * rgb2xyz.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * rgb2xyz.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         function correctGamma(n) {
@@ -312,6 +362,7 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
@@ -327,6 +378,23 @@ export function dew() {
          * Lightness: [0..1]
          * Saturation: [0..1]
          * http://web.archive.org/web/20060914040436/http://local.wasp.uwa.edu.au/~pbourke/colour/hsl/
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * rgb2hsl.ts - part of Image Quantization Library
+         */
+
+        var arithmetic_1 = __webpack_require__(6);
+        /**
+         * Calculate HSL from RGB
+         * Hue is in degrees [0..360]
+         * Lightness: [0..1]
+         * Saturation: [0..1]
+         * http://web.archive.org/web/20060914040436/http://local.wasp.uwa.edu.au/~pbourke/colour/hsl/
+>>>>>>> Stashed changes
          */
 
 
@@ -449,12 +517,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * rgb2lab.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * rgb2lab.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var rgb2xyz_1 = __webpack_require__(4);
@@ -474,12 +551,21 @@ export function dew() {
       /***/
       function (module, exports) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * xyz2lab.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * xyz2lab.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var refX = 0.95047,
@@ -512,12 +598,21 @@ export function dew() {
       /***/
       function (module, exports) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * lab2xyz.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * lab2xyz.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var refX = 0.95047,
@@ -549,12 +644,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * lab2rgb.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * lab2rgb.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var lab2xyz_1 = __webpack_require__(9);
@@ -574,12 +678,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * xyz2rgb.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * xyz2rgb.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var arithmetic_1 = __webpack_require__(6); // gamma correction, see https://en.wikipedia.org/wiki/SRGB#The_reverse_transformation
@@ -609,12 +722,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * iq.ts - Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * iq.ts - Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var abstractDistanceCalculator_1 = __webpack_require__(13);
@@ -704,12 +826,21 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * cie94.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * cie94.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
@@ -718,9 +849,15 @@ export function dew() {
         var rgb2lab_1 = __webpack_require__(7);
 
         var arithmetic_1 = __webpack_require__(6);
+<<<<<<< Updated upstream
         /**
          * CIE94 method of delta-e
          * http://en.wikipedia.org/wiki/Color_difference#CIE94
+=======
+        /**
+         * CIE94 method of delta-e
+         * http://en.wikipedia.org/wiki/Color_difference#CIE94
+>>>>>>> Stashed changes
          */
 
 
@@ -806,12 +943,21 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * ciede2000.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * ciede2000.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
@@ -820,9 +966,15 @@ export function dew() {
         var rgb2lab_1 = __webpack_require__(7);
 
         var arithmetic_1 = __webpack_require__(6);
+<<<<<<< Updated upstream
         /**
          * CIEDE2000 algorithm - Adapted from Sharma et al's MATLAB implementation at
          * http://www.ece.rochester.edu/~gsharma/ciede2000/
+=======
+        /**
+         * CIEDE2000 algorithm - Adapted from Sharma et al's MATLAB implementation at
+         * http://www.ece.rochester.edu/~gsharma/ciede2000/
+>>>>>>> Stashed changes
          */
 
 
@@ -927,10 +1079,17 @@ export function dew() {
 
             return 2.0 * Math.sqrt(C1pC2p) * Math.sin(dhp / 2.0);
           };
+<<<<<<< Updated upstream
           /**
            * Weight in distance: 0.25
            * Max DeltaE: 100
            * Max DeltaA: 255
+=======
+          /**
+           * Weight in distance: 0.25
+           * Max DeltaE: 100
+           * Max DeltaA: 255
+>>>>>>> Stashed changes
            */
 
 
@@ -964,18 +1123,32 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * cmetric.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * cmetric.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
         var abstractDistanceCalculator_1 = __webpack_require__(13);
+<<<<<<< Updated upstream
         /**
          * TODO: Name it: http://www.compuphase.com/cmetric.htm
+=======
+        /**
+         * TODO: Name it: http://www.compuphase.com/cmetric.htm
+>>>>>>> Stashed changes
          */
 
 
@@ -1017,20 +1190,34 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * euclidean.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * euclidean.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
         var abstractDistanceCalculator_1 = __webpack_require__(13);
 
         var bt709_1 = __webpack_require__(2);
+<<<<<<< Updated upstream
         /**
          * Euclidean color distance
+=======
+        /**
+         * Euclidean color distance
+>>>>>>> Stashed changes
          */
 
 
@@ -1072,8 +1259,13 @@ export function dew() {
         }(AbstractEuclidean);
 
         exports.Euclidean = Euclidean;
+<<<<<<< Updated upstream
         /**
          * Euclidean color distance (RgbQuant modification w Alpha)
+=======
+        /**
+         * Euclidean color distance (RgbQuant modification w Alpha)
+>>>>>>> Stashed changes
          */
 
         var EuclideanRgbQuantWithAlpha = function (_super) {
@@ -1095,8 +1287,13 @@ export function dew() {
         }(AbstractEuclidean);
 
         exports.EuclideanRgbQuantWithAlpha = EuclideanRgbQuantWithAlpha;
+<<<<<<< Updated upstream
         /**
          * Euclidean color distance (RgbQuant modification w/o Alpha)
+=======
+        /**
+         * Euclidean color distance (RgbQuant modification w/o Alpha)
+>>>>>>> Stashed changes
          */
 
         var EuclideanRgbQuantWOAlpha = function (_super) {
@@ -1134,20 +1331,34 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * manhattanNeuQuant.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * manhattanNeuQuant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
         var abstractDistanceCalculator_1 = __webpack_require__(13);
 
         var bt709_1 = __webpack_require__(2);
+<<<<<<< Updated upstream
         /**
          * Manhattan distance (NeuQuant modification) - w/o sRGB coefficients
+=======
+        /**
+         * Manhattan distance (NeuQuant modification) - w/o sRGB coefficients
+>>>>>>> Stashed changes
          */
 
 
@@ -1193,9 +1404,15 @@ export function dew() {
         }(AbstractManhattan);
 
         exports.Manhattan = Manhattan;
+<<<<<<< Updated upstream
         /**
          * Manhattan distance (Nommyde modification)
          * https://github.com/igor-bezkrovny/image-quantization/issues/4#issuecomment-235155320
+=======
+        /**
+         * Manhattan distance (Nommyde modification)
+         * https://github.com/igor-bezkrovny/image-quantization/issues/4#issuecomment-235155320
+>>>>>>> Stashed changes
          */
 
         var ManhattanNommyde = function (_super) {
@@ -1217,8 +1434,13 @@ export function dew() {
         }(AbstractManhattan);
 
         exports.ManhattanNommyde = ManhattanNommyde;
+<<<<<<< Updated upstream
         /**
          * Manhattan distance (sRGB coefficients)
+=======
+        /**
+         * Manhattan distance (sRGB coefficients)
+>>>>>>> Stashed changes
          */
 
         var ManhattanSRGB = function (_super) {
@@ -1257,22 +1479,40 @@ export function dew() {
 
           d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
         };
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * pngQuant.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * pngQuant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
 
         var abstractDistanceCalculator_1 = __webpack_require__(13);
+<<<<<<< Updated upstream
         /**
          * TODO: check quality of this distance equation
          * TODO: ask author for usage rights
          * taken from:
          * {@link http://stackoverflow.com/questions/4754506/color-similarity-distance-in-rgba-color-space/8796867#8796867}
          * {@link https://github.com/pornel/pngquant/blob/cc39b47799a7ff2ef17b529f9415ff6e6b213b8f/lib/pam.h#L148}
+=======
+        /**
+         * TODO: check quality of this distance equation
+         * TODO: ask author for usage rights
+         * taken from:
+         * {@link http://stackoverflow.com/questions/4754506/color-similarity-distance-in-rgba-color-space/8796867#8796867}
+         * {@link https://github.com/pornel/pngquant/blob/cc39b47799a7ff2ef17b529f9415ff6e6b213b8f/lib/pam.h#L148}
+>>>>>>> Stashed changes
          */
 
 
@@ -1282,6 +1522,7 @@ export function dew() {
           function PNGQUANT() {
             _super.apply(this || _global, arguments);
           }
+<<<<<<< Updated upstream
           /**
            * Author's comments
            * px_b.rgb = px.rgb + 0*(1-px.a) // blend px on black
@@ -1295,6 +1536,21 @@ export function dew() {
               * (px.rgb - px.a) - (py.rgb - py.a)
            * (px.rgb - py.rgb) + (py.a - px.a)
            *
+=======
+          /**
+           * Author's comments
+           * px_b.rgb = px.rgb + 0*(1-px.a) // blend px on black
+           * px_b.a   = px.a   + 1*(1-px.a)
+           * px_w.rgb = px.rgb + 1*(1-px.a) // blend px on white
+           * px_w.a   = px.a   + 1*(1-px.a)
+              * px_b.rgb = px.rgb              // difference same as in opaque RGB
+           * px_b.a   = 1
+           * px_w.rgb = px.rgb - px.a       // difference simplifies to formula below
+           * px_w.a   = 1
+              * (px.rgb - px.a) - (py.rgb - py.a)
+           * (px.rgb - py.rgb) + (py.a - px.a)
+           *
+>>>>>>> Stashed changes
            */
 
 
@@ -1349,6 +1605,7 @@ export function dew() {
 
       /***/
       function (module, exports, __webpack_require__) {
+<<<<<<< Updated upstream
         /*
          * NeuQuant Neural-Net Quantization Algorithm
          * ------------------------------------------
@@ -1376,6 +1633,35 @@ export function dew() {
          * All rights reserved. (MIT Licensed)
          *
          * neuquant.ts - part of Image Quantization Library
+=======
+        /*
+         * NeuQuant Neural-Net Quantization Algorithm
+         * ------------------------------------------
+         *
+         * Copyright (c) 1994 Anthony Dekker
+         *
+         * NEUQUANT Neural-Net quantization algorithm by Anthony Dekker, 1994. See
+         * "Kohonen neural networks for optimal colour quantization" in "Network:
+         * Computation in Neural Systems" Vol. 5 (1994) pp 351-367. for a discussion of
+         * the algorithm.
+         *
+         * Any party obtaining a copy of these files from the author, directly or
+         * indirectly, is granted, free of charge, a full and unrestricted irrevocable,
+         * world-wide, paid up, royalty-free, nonexclusive right and license to deal in
+         * this software and documentation files (the "Software"), including without
+         * limitation the rights to use, copy, modify, merge, publish, distribute,
+         * sublicense, and/or sell copies of the Software, and to permit persons who
+         * receive copies from any such party to do so, with the only requirement being
+         * that this copyright notice remain intact.
+         */
+        "use strict";
+        /**
+         * @preserve TypeScript port:
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * neuquant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var palette_1 = __webpack_require__(22);
@@ -1389,10 +1675,17 @@ export function dew() {
           function Neuron(defaultValue) {
             (this || _global).r = (this || _global).g = (this || _global).b = (this || _global).a = defaultValue;
           }
+<<<<<<< Updated upstream
           /**
            * There is a fix in original NEUQUANT by Anthony Dekker (http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
            * @example
            * r = Math.min(255, (neuron.r + (1 << (networkBiasShift - 1))) >> networkBiasShift);
+=======
+          /**
+           * There is a fix in original NEUQUANT by Anthony Dekker (http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
+           * @example
+           * r = Math.min(255, (neuron.r + (1 << (networkBiasShift - 1))) >> networkBiasShift);
+>>>>>>> Stashed changes
            */
 
 
@@ -1449,8 +1742,13 @@ export function dew() {
               (this || _global)._bias[i] = 0;
             }
           };
+<<<<<<< Updated upstream
           /**
            * Main Learning Loop
+=======
+          /**
+           * Main Learning Loop
+>>>>>>> Stashed changes
            */
 
 
@@ -1523,8 +1821,13 @@ export function dew() {
             palette.sort();
             return palette;
           };
+<<<<<<< Updated upstream
           /**
            * Move adjacent neurons by precomputed alpha*(1-((i-j)^2/[r]^2)) in radpower[|i-j|]
+=======
+          /**
+           * Move adjacent neurons by precomputed alpha*(1-((i-j)^2/[r]^2)) in radpower[|i-j|]
+>>>>>>> Stashed changes
            */
 
 
@@ -1551,8 +1854,13 @@ export function dew() {
               }
             }
           };
+<<<<<<< Updated upstream
           /**
            * Move neuron i towards biased (b,g,r) by factor alpha
+=======
+          /**
+           * Move neuron i towards biased (b,g,r) by factor alpha
+>>>>>>> Stashed changes
            */
 
 
@@ -1563,6 +1871,7 @@ export function dew() {
             var n = (this || _global)._network[i];
             n.subtract(alpha * (n.r - r), alpha * (n.g - g), alpha * (n.b - b), alpha * (n.a - a));
           };
+<<<<<<< Updated upstream
           /**
            * Search for biased BGR values
            * description:
@@ -1573,6 +1882,18 @@ export function dew() {
            *
            * Original distance equation:
            *        dist = abs(dR) + abs(dG) + abs(dB)
+=======
+          /**
+           * Search for biased BGR values
+           * description:
+           *    finds closest neuron (min dist) and updates freq
+           *    finds best neuron (min dist-bias) and returns position
+           *    for frequently chosen neurons, freq[i] is high and bias[i] is negative
+           *    bias[i] = _gamma*((1/this._networkSize)-freq[i])
+           *
+           * Original distance equation:
+           *        dist = abs(dR) + abs(dG) + abs(dB)
+>>>>>>> Stashed changes
            */
 
 
@@ -1613,9 +1934,15 @@ export function dew() {
             (this || _global)._bias[bestpos] -= NeuQuant._betaGamma;
             return bestbiaspos;
           };
+<<<<<<< Updated upstream
           /*
            four primes near 500 - assume no image has a length so large
            that it is divisible by all four primes
+=======
+          /*
+           four primes near 500 - assume no image has a length so large
+           that it is divisible by all four primes
+>>>>>>> Stashed changes
            */
 
 
@@ -1638,8 +1965,13 @@ export function dew() {
           NeuQuant._beta = NeuQuant._initialBias >> NeuQuant._betaShift; // beta = 1/1024
 
           NeuQuant._betaGamma = NeuQuant._initialBias << NeuQuant._gammaShift - NeuQuant._betaShift;
+<<<<<<< Updated upstream
           /*
            * for 256 cols, radius starts
+=======
+          /*
+           * for 256 cols, radius starts
+>>>>>>> Stashed changes
            */
 
           NeuQuant._radiusBiasShift = 6; // at 32.0 biased by 6 bits
@@ -1669,12 +2001,21 @@ export function dew() {
 
       /***/
       function (module, exports, __webpack_require__) {
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * palette.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * palette.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
         "use strict";
 
@@ -1733,6 +2074,7 @@ export function dew() {
             return (this || _global)._pointContainer;
           }; // TOTRY: use HUSL - http://boronine.com/husl/
 
+<<<<<<< Updated upstream
           /*
            public nearestIndexByUint32(i32) {
            var idx : number = this._nearestPointFromCache("" + i32);
@@ -1756,6 +2098,31 @@ export function dew() {
               this._i32idx[i32] = idx;
            return idx;
            }
+=======
+          /*
+           public nearestIndexByUint32(i32) {
+           var idx : number = this._nearestPointFromCache("" + i32);
+           if (idx >= 0) return idx;
+              var min = 1000,
+           rgb = [
+           (i32 & 0xff),
+           (i32 >>> 8) & 0xff,
+           (i32 >>> 16) & 0xff,
+           (i32 >>> 24) & 0xff
+           ],
+           len = this._pointArray.length;
+              idx = 0;
+           for (var i = 0; i < len; i++) {
+           var dist = Utils.distEuclidean(rgb, this._pointArray[i].rgba);
+              if (dist < min) {
+           min = dist;
+           idx = i;
+           }
+           }
+              this._i32idx[i32] = idx;
+           return idx;
+           }
+>>>>>>> Stashed changes
            */
 
 
@@ -1783,6 +2150,7 @@ export function dew() {
             (this || _global)._i32idx[point.uint32] = idx;
             return idx;
           };
+<<<<<<< Updated upstream
           /*
            public reduce(histogram : ColorHistogram, colors : number) {
            if (this._pointArray.length > colors) {
@@ -1824,6 +2192,49 @@ export function dew() {
            this._pointArray.length = colors;
            this._i32idx = {};
            }
+=======
+          /*
+           public reduce(histogram : ColorHistogram, colors : number) {
+           if (this._pointArray.length > colors) {
+           var idxi32 = histogram.getImportanceSortedColorsIDXI32();
+              // quantize histogram to existing palette
+           var keep = [], uniqueColors = 0, idx, pruned = false;
+              for (var i = 0, len = idxi32.length; i < len; i++) {
+           // palette length reached, unset all remaining colors (sparse palette)
+           if (uniqueColors >= colors) {
+           this.prunePal(keep);
+           pruned = true;
+           break;
+           } else {
+           idx = this.nearestIndexByUint32(idxi32[i]);
+           if (keep.indexOf(idx) < 0) {
+           keep.push(idx);
+           uniqueColors++;
+           }
+           }
+           }
+              if (!pruned) {
+           this.prunePal(keep);
+           }
+           }
+           }
+              // TODO: check usage, not tested!
+           public prunePal(keep : number[]) {
+           var colors = this._pointArray.length;
+           for (var colorIndex = colors - 1; colorIndex >= 0; colorIndex--) {
+           if (keep.indexOf(colorIndex) < 0) {
+              if(colorIndex + 1 < colors) {
+           this._pointArray[ colorIndex ] = this._pointArray [ colors - 1 ];
+           }
+           --colors;
+           //this._pointArray[colorIndex] = null;
+           }
+           }
+           console.log("colors pruned: " + (this._pointArray.length - colors));
+           this._pointArray.length = colors;
+           this._i32idx = {};
+           }
+>>>>>>> Stashed changes
            */
           // TODO: group very low lum and very high lum colors
           // TODO: pass custom sort order
@@ -1839,16 +2250,28 @@ export function dew() {
 
               var hueA = a.r === a.g && a.g === a.b ? 0 : 1 + hueGroup(hslA.h, hueGroups),
                   hueB = b.r === b.g && b.g === b.b ? 0 : 1 + hueGroup(hslB.h, hueGroups);
+<<<<<<< Updated upstream
               /*
                var hueA = (a.r === a.g && a.g === a.b) ? 0 : 1 + Utils.hueGroup(hslA.h, hueGroups);
                var hueB = (b.r === b.g && b.g === b.b) ? 0 : 1 + Utils.hueGroup(hslB.h, hueGroups);
+=======
+              /*
+               var hueA = (a.r === a.g && a.g === a.b) ? 0 : 1 + Utils.hueGroup(hslA.h, hueGroups);
+               var hueB = (b.r === b.g && b.g === b.b) ? 0 : 1 + Utils.hueGroup(hslB.h, hueGroups);
+>>>>>>> Stashed changes
                */
 
               var hueDiff = hueB - hueA;
               if (hueDiff) return -hueDiff;
+<<<<<<< Updated upstream
               /*
                var lumDiff = Utils.lumGroup(+hslB.l.toFixed(2)) - Utils.lumGroup(+hslA.l.toFixed(2));
                if (lumDiff) return -lumDiff;
+=======
+              /*
+               var lumDiff = Utils.lumGroup(+hslB.l.toFixed(2)) - Utils.lumGroup(+hslA.l.toFixed(2));
+               if (lumDiff) return -lumDiff;
+>>>>>>> Stashed changes
                */
 
               var lA = a.getLuminosity(true),
@@ -1871,6 +2294,7 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
@@ -1883,6 +2307,20 @@ export function dew() {
         /**
          * v8 optimizations done.
          * fromXXX methods are static to move out polymorphic code from class instance itself.
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * pointContainer.ts - part of Image Quantization Library
+         */
+
+        var point_1 = __webpack_require__(24);
+        /**
+         * v8 optimizations done.
+         * fromXXX methods are static to move out polymorphic code from class instance itself.
+>>>>>>> Stashed changes
          */
 
 
@@ -1967,6 +2405,7 @@ export function dew() {
             var width = imageData.width,
                 height = imageData.height;
             return PointContainer.fromCanvasPixelArray(imageData.data, width, height);
+<<<<<<< Updated upstream
             /*
              var buf8;
              if (Utils.typeOf(imageData.data) == "CanvasPixelArray")
@@ -1974,6 +2413,15 @@ export function dew() {
              else
              buf8 = imageData.data;
                 this.fromUint32Array(new Uint32Array(buf8.buffer), width, height);
+=======
+            /*
+             var buf8;
+             if (Utils.typeOf(imageData.data) == "CanvasPixelArray")
+             buf8 = new Uint8Array(imageData.data);
+             else
+             buf8 = imageData.data;
+                this.fromUint32Array(new Uint32Array(buf8.buffer), width, height);
+>>>>>>> Stashed changes
              */
           };
 
@@ -2013,6 +2461,7 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
@@ -2026,6 +2475,21 @@ export function dew() {
          * v8 optimized class
          * 1) "constructor" should have initialization with worst types
          * 2) "set" should have |0 / >>> 0
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * point.ts - part of Image Quantization Library
+         */
+
+        var bt709_1 = __webpack_require__(2);
+        /**
+         * v8 optimized class
+         * 1) "constructor" should have initialization with worst types
+         * 2) "set" should have |0 / >>> 0
+>>>>>>> Stashed changes
          */
 
 
@@ -2040,12 +2504,21 @@ export function dew() {
             (this || _global).rgba[1] = 0;
             (this || _global).rgba[2] = 0;
             (this || _global).rgba[3] = 0;
+<<<<<<< Updated upstream
             /*
              this.Lab = {
              L : 0.0,
              a : 0.0,
              b : 0.0
              };
+=======
+            /*
+             this.Lab = {
+             L : 0.0,
+             a : 0.0,
+             b : 0.0
+             };
+>>>>>>> Stashed changes
              */
           }
 
@@ -2101,6 +2574,7 @@ export function dew() {
             (this || _global).rgba[1] = point.g;
             (this || _global).rgba[2] = point.b;
             (this || _global).rgba[3] = point.a;
+<<<<<<< Updated upstream
             /*
              this.Lab.L = point.Lab.L;
              this.Lab.a = point.Lab.a;
@@ -2113,6 +2587,20 @@ export function dew() {
               Luminance (standard for certain colour spaces): (0.2126*R + 0.7152*G + 0.0722*B) [1]
            Luminance (perceived option 1): (0.299*R + 0.587*G + 0.114*B) [2]
            Luminance (perceived option 2, slower to calculate):  sqrt( 0.241*R^2 + 0.691*G^2 + 0.068*B^2 ) ? sqrt( 0.299*R^2 + 0.587*G^2 + 0.114*B^2 ) (thanks to @MatthewHerbst) [http://alienryderflex.com/hsp.html]
+=======
+            /*
+             this.Lab.L = point.Lab.L;
+             this.Lab.a = point.Lab.a;
+             this.Lab.b = point.Lab.b;
+             */
+          };
+          /*
+           * TODO:
+           Luminance from RGB:
+              Luminance (standard for certain colour spaces): (0.2126*R + 0.7152*G + 0.0722*B) [1]
+           Luminance (perceived option 1): (0.299*R + 0.587*G + 0.114*B) [2]
+           Luminance (perceived option 2, slower to calculate):  sqrt( 0.241*R^2 + 0.691*G^2 + 0.068*B^2 ) ? sqrt( 0.299*R^2 + 0.587*G^2 + 0.114*B^2 ) (thanks to @MatthewHerbst) [http://alienryderflex.com/hsp.html]
+>>>>>>> Stashed changes
            */
 
 
@@ -2127,10 +2615,17 @@ export function dew() {
               b = Math.min(255, 255 - (this || _global).a + (this || _global).a * b / 255);
             } //var luma = this.r * Point._RED_COEFFICIENT + this.g * Point._GREEN_COEFFICIENT + this.b * Point._BLUE_COEFFICIENT;
 
+<<<<<<< Updated upstream
             /*
              if(useAlphaChannel) {
              luma = (luma * (255 - this.a)) / 255;
              }
+=======
+            /*
+             if(useAlphaChannel) {
+             luma = (luma * (255 - this.a)) / 255;
+             }
+>>>>>>> Stashed changes
              */
 
 
@@ -2153,12 +2648,21 @@ export function dew() {
             (this || _global).rgba[1] = (this || _global).g;
             (this || _global).rgba[2] = (this || _global).b;
             (this || _global).rgba[3] = (this || _global).a;
+<<<<<<< Updated upstream
             /*
              var xyz = rgb2xyz(this.r, this.g, this.b);
              var lab = xyz2lab(xyz.x, xyz.y, xyz.z);
              this.lab.l = lab.l;
              this.lab.a = lab.a;
              this.lab.b = lab.b;
+=======
+            /*
+             var xyz = rgb2xyz(this.r, this.g, this.b);
+             var lab = xyz2lab(xyz.x, xyz.y, xyz.z);
+             this.lab.l = lab.l;
+             this.lab.a = lab.a;
+             this.lab.b = lab.b;
+>>>>>>> Stashed changes
              */
           };
 
@@ -2173,6 +2677,7 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /*
          * NeuQuantFloat Neural-Net Quantization Algorithm
          * ------------------------------------------
@@ -2200,6 +2705,35 @@ export function dew() {
          * All rights reserved. (MIT Licensed)
          *
          * neuquant.ts - part of Image Quantization Library
+=======
+        /*
+         * NeuQuantFloat Neural-Net Quantization Algorithm
+         * ------------------------------------------
+         *
+         * Copyright (c) 1994 Anthony Dekker
+         *
+         * NEUQUANT Neural-Net quantization algorithm by Anthony Dekker, 1994. See
+         * "Kohonen neural networks for optimal colour quantization" in "Network:
+         * Computation in Neural Systems" Vol. 5 (1994) pp 351-367. for a discussion of
+         * the algorithm.
+         *
+         * Any party obtaining a copy of these files from the author, directly or
+         * indirectly, is granted, free of charge, a full and unrestricted irrevocable,
+         * world-wide, paid up, royalty-free, nonexclusive right and license to deal in
+         * this software and documentation files (the "Software"), including without
+         * limitation the rights to use, copy, modify, merge, publish, distribute,
+         * sublicense, and/or sell copies of the Software, and to permit persons who
+         * receive copies from any such party to do so, with the only requirement being
+         * that this copyright notice remain intact.
+         */
+
+        /**
+         * @preserve TypeScript port:
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * neuquant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var palette_1 = __webpack_require__(22);
@@ -2213,10 +2747,17 @@ export function dew() {
           function NeuronFloat(defaultValue) {
             (this || _global).r = (this || _global).g = (this || _global).b = (this || _global).a = defaultValue;
           }
+<<<<<<< Updated upstream
           /**
            * There is a fix in original NEUQUANT by Anthony Dekker (http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
            * @example
            * r = Math.min(255, (neuron.r + (1 << (networkBiasShift - 1))) >> networkBiasShift);
+=======
+          /**
+           * There is a fix in original NEUQUANT by Anthony Dekker (http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
+           * @example
+           * r = Math.min(255, (neuron.r + (1 << (networkBiasShift - 1))) >> networkBiasShift);
+>>>>>>> Stashed changes
            */
 
 
@@ -2273,8 +2814,13 @@ export function dew() {
               (this || _global)._bias[i] = 0;
             }
           };
+<<<<<<< Updated upstream
           /**
            * Main Learning Loop
+=======
+          /**
+           * Main Learning Loop
+>>>>>>> Stashed changes
            */
 
 
@@ -2347,8 +2893,13 @@ export function dew() {
             palette.sort();
             return palette;
           };
+<<<<<<< Updated upstream
           /**
            * Move adjacent neurons by precomputed alpha*(1-((i-j)^2/[r]^2)) in radpower[|i-j|]
+=======
+          /**
+           * Move adjacent neurons by precomputed alpha*(1-((i-j)^2/[r]^2)) in radpower[|i-j|]
+>>>>>>> Stashed changes
            */
 
 
@@ -2375,8 +2926,13 @@ export function dew() {
               }
             }
           };
+<<<<<<< Updated upstream
           /**
            * Move neuron i towards biased (b,g,r) by factor alpha
+=======
+          /**
+           * Move neuron i towards biased (b,g,r) by factor alpha
+>>>>>>> Stashed changes
            */
 
 
@@ -2387,6 +2943,7 @@ export function dew() {
             var n = (this || _global)._network[i];
             n.subtract(alpha * (n.r - r), alpha * (n.g - g), alpha * (n.b - b), alpha * (n.a - a));
           };
+<<<<<<< Updated upstream
           /**
            * Search for biased BGR values
            * description:
@@ -2397,6 +2954,18 @@ export function dew() {
            *
            * Original distance equation:
            *        dist = abs(dR) + abs(dG) + abs(dB)
+=======
+          /**
+           * Search for biased BGR values
+           * description:
+           *    finds closest neuron (min dist) and updates freq
+           *    finds best neuron (min dist-bias) and returns position
+           *    for frequently chosen neurons, freq[i] is high and bias[i] is negative
+           *    bias[i] = _gamma*((1/this._networkSize)-freq[i])
+           *
+           * Original distance equation:
+           *        dist = abs(dR) + abs(dG) + abs(dB)
+>>>>>>> Stashed changes
            */
 
 
@@ -2437,9 +3006,15 @@ export function dew() {
             (this || _global)._bias[bestpos] -= NeuQuantFloat._betaGamma;
             return bestbiaspos;
           };
+<<<<<<< Updated upstream
           /*
            four primes near 500 - assume no image has a length so large
            that it is divisible by all four primes
+=======
+          /*
+           four primes near 500 - assume no image has a length so large
+           that it is divisible by all four primes
+>>>>>>> Stashed changes
            */
 
 
@@ -2462,8 +3037,13 @@ export function dew() {
           NeuQuantFloat._beta = NeuQuantFloat._initialBias >> NeuQuantFloat._betaShift; // beta = 1/1024
 
           NeuQuantFloat._betaGamma = NeuQuantFloat._initialBias << NeuQuantFloat._gammaShift - NeuQuantFloat._betaShift;
+<<<<<<< Updated upstream
           /*
            * for 256 cols, radius starts
+=======
+          /*
+           * for 256 cols, radius starts
+>>>>>>> Stashed changes
            */
 
           NeuQuantFloat._radiusBiasShift = 6; // at 32.0 biased by 6 bits
@@ -2493,6 +3073,7 @@ export function dew() {
 
       /***/
       function (module, exports, __webpack_require__) {
+<<<<<<< Updated upstream
         /*
          * Copyright (c) 2015, Leon Sorokin
          * All rights reserved. (MIT Licensed)
@@ -2506,6 +3087,21 @@ export function dew() {
          * All rights reserved. (MIT Licensed)
          *
          * rgbquant.ts - part of Image Quantization Library
+=======
+        /*
+         * Copyright (c) 2015, Leon Sorokin
+         * All rights reserved. (MIT Licensed)
+         *
+         * RgbQuant.js - an image quantization lib
+         */
+        "use strict";
+        /**
+         * @preserve TypeScript port:
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * rgbquant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var palette_1 = __webpack_require__(22);
@@ -2548,6 +3144,7 @@ export function dew() {
 
 
           RGBQuant.prototype.sample = function (image) {
+<<<<<<< Updated upstream
             /*
              var pointArray = image.getPointArray(), max = [0, 0, 0, 0], min = [255, 255, 255, 255];
                 for (var i = 0, l = pointArray.length; i < l; i++) {
@@ -2560,6 +3157,20 @@ export function dew() {
              var rd = max[0] - min[0], gd = max[1] - min[1], bd = max[2] - min[2], ad = max[3] - min[3];
              this._distance.setWhitePoint(rd, gd, bd, ad);
                 this._initialDistance = (Math.sqrt(rd * rd + gd * gd + bd * bd + ad * ad) / Math.sqrt(255 * 255 + 255 * 255 + 255 * 255)) * 0.01;
+=======
+            /*
+             var pointArray = image.getPointArray(), max = [0, 0, 0, 0], min = [255, 255, 255, 255];
+                for (var i = 0, l = pointArray.length; i < l; i++) {
+             var color = pointArray[i];
+             for (var componentIndex = 0; componentIndex < 4; componentIndex++) {
+             if (max[componentIndex] < color.rgba[componentIndex]) max[componentIndex] = color.rgba[componentIndex];
+             if (min[componentIndex] > color.rgba[componentIndex]) min[componentIndex] = color.rgba[componentIndex];
+             }
+             }
+             var rd = max[0] - min[0], gd = max[1] - min[1], bd = max[2] - min[2], ad = max[3] - min[3];
+             this._distance.setWhitePoint(rd, gd, bd, ad);
+                this._initialDistance = (Math.sqrt(rd * rd + gd * gd + bd * bd + ad * ad) / Math.sqrt(255 * 255 + 255 * 255 + 255 * 255)) * 0.01;
+>>>>>>> Stashed changes
              */
             (this || _global)._histogram.sample(image);
           }; // reduces histogram to palette, remaps & memoizes reduced colors
@@ -2667,6 +3278,7 @@ export function dew() {
 
       /***/
       function (module, exports, __webpack_require__) {
+<<<<<<< Updated upstream
         /*
          * Copyright (c) 2015, Leon Sorokin
          * All rights reserved. (MIT Licensed)
@@ -2680,6 +3292,21 @@ export function dew() {
          * All rights reserved. (MIT Licensed)
          *
          * colorHistogram.ts - part of Image Quantization Library
+=======
+        /*
+         * Copyright (c) 2015, Leon Sorokin
+         * All rights reserved. (MIT Licensed)
+         *
+         * ColorHistogram.js - an image quantization lib
+         */
+        "use strict";
+        /**
+         * @preserve TypeScript port:
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * colorHistogram.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var hueStatistics_1 = __webpack_require__(28);
@@ -2825,9 +3452,15 @@ export function dew() {
               i += ++cnt % b.w == 0 ? incr : 1;
             } while (i <= i1);
           };
+<<<<<<< Updated upstream
           /**
            *    partitions a rectangle of width x height into
            *    array of boxes stepX x stepY (or less)
+=======
+          /**
+           *    partitions a rectangle of width x height into
+           *    array of boxes stepX x stepY (or less)
+>>>>>>> Stashed changes
            */
 
 
@@ -2862,12 +3495,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * hueStatistics.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * hueStatistics.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var rgb2hsl_1 = __webpack_require__(5);
@@ -2944,12 +3586,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * wuQuant.ts - part of Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * wuQuant.ts - part of Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var palette_1 = __webpack_require__(22);
@@ -3191,8 +3842,13 @@ export function dew() {
             (this || _global)._momentsAlpha[indexAlpha][indexRed][indexGreen][indexBlue] += color.a;
             (this || _global)._moments[indexAlpha][indexRed][indexGreen][indexBlue] += (this || _global)._table[color.r] + (this || _global)._table[color.g] + (this || _global)._table[color.b] + (this || _global)._table[color.a]; //			}
           };
+<<<<<<< Updated upstream
           /**
            * Converts the histogram to a series of _moments.
+=======
+          /**
+           * Converts the histogram to a series of _moments.
+>>>>>>> Stashed changes
            */
 
 
@@ -3264,24 +3920,39 @@ export function dew() {
               }
             }
           };
+<<<<<<< Updated upstream
           /**
            * Computes the volume of the cube in a specific moment.
+=======
+          /**
+           * Computes the volume of the cube in a specific moment.
+>>>>>>> Stashed changes
            */
 
 
           WuQuant._volumeFloat = function (cube, moment) {
             return moment[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - moment[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - moment[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           };
+<<<<<<< Updated upstream
           /**
            * Computes the volume of the cube in a specific moment.
+=======
+          /**
+           * Computes the volume of the cube in a specific moment.
+>>>>>>> Stashed changes
            */
 
 
           WuQuant._volume = function (cube, moment) {
             return WuQuant._volumeFloat(cube, moment) | 0;
           };
+<<<<<<< Updated upstream
           /**
            * Splits the cube in given position][and color direction.
+=======
+          /**
+           * Splits the cube in given position][and color direction.
+>>>>>>> Stashed changes
            */
 
 
@@ -3311,8 +3982,13 @@ export function dew() {
 
             return result | 0;
           };
+<<<<<<< Updated upstream
           /**
            * Splits the cube in a given color direction at its minimum.
+=======
+          /**
+           * Splits the cube in a given color direction at its minimum.
+>>>>>>> Stashed changes
            */
 
 
@@ -3335,8 +4011,13 @@ export function dew() {
                 return 0;
             }
           };
+<<<<<<< Updated upstream
           /**
            * Calculates statistical variance for a given cube.
+=======
+          /**
+           * Calculates statistical variance for a given cube.
+>>>>>>> Stashed changes
            */
 
 
@@ -3351,8 +4032,13 @@ export function dew() {
 
             return volumeMoment - distance / volumeWeight;
           };
+<<<<<<< Updated upstream
           /**
            * Finds the optimal (maximal) position for the cut.
+=======
+          /**
+           * Finds the optimal (maximal) position for the cut.
+>>>>>>> Stashed changes
            */
 
 
@@ -4036,12 +4722,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * iq.ts - Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * iq.ts - Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var ssim_1 = __webpack_require__(36);
@@ -4164,12 +4859,21 @@ export function dew() {
       /***/
       function (module, exports, __webpack_require__) {
         "use strict";
+<<<<<<< Updated upstream
         /**
          * @preserve
          * Copyright 2015-2016 Igor Bezkrovnyi
          * All rights reserved. (MIT Licensed)
          *
          * iq.ts - Image Quantization Library
+=======
+        /**
+         * @preserve
+         * Copyright 2015-2016 Igor Bezkrovnyi
+         * All rights reserved. (MIT Licensed)
+         *
+         * iq.ts - Image Quantization Library
+>>>>>>> Stashed changes
          */
 
         var arithmetic = __webpack_require__(6);
